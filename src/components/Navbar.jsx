@@ -1,7 +1,7 @@
-import { ChevronDown, Menu, X } from 'lucide-react'
+﻿import { ChevronDown, Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import BrushButton from './BrushButton'
-import logo from '../assets/logo/purple-cow-logo.svg'
+import logo from '../assets/logo/purple-cow-logo-new.jpg'
 
 const links = ['About Us', 'Work', 'Services', 'Insights', 'Careers', 'Contact']
 
