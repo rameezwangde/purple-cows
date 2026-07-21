@@ -1,0 +1,1 @@
+export default function FlyingPaperPlane(){return <div className="flying-plane" aria-hidden="true"><svg viewBox="0 0 92 64"><path d="M3 25 88 2 53 61 41 39 3 25Z" fill="#7a2eff"/><path d="m41 39 47-37-38 45" fill="#3f0b93"/><path d="m41 39 10 20 2-24L88 2 41 39Z" fill="#5c16d6"/></svg></div>}

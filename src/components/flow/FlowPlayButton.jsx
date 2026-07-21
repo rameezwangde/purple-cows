@@ -1,0 +1,2 @@
+import gsap from 'gsap'
+export default function FlowPlayButton(){const click=()=>document.querySelector('.brand-wall-section')?.scrollIntoView({behavior:'smooth'});return <button className="flow-play" type="button" onClick={click} aria-label="See how we create"><span>?</span><em>See how we create</em></button>}
