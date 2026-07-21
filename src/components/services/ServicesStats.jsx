@@ -1,0 +1,4 @@
+import { Heart, Rocket, Smile, TrendingUp } from 'lucide-react'
+// Replace placeholder statistics with verified client data before launch.
+const stats=[{value:'250+',label:'Brands Transformed',icon:Smile},{value:'1000+',label:'Campaigns Launched',icon:Rocket},{value:'15+',label:'Years of Creativity',icon:TrendingUp},{value:'6',label:'Cities. One Vision.',icon:Heart}]
+export default function ServicesStats(){return <div className="services-stats"><p className="services-stats-note">We don&apos;t follow<br/>trends.<br/>We <span>start</span> them.</p><div className="services-stat-list">{stats.map(({value,label,icon:Icon})=><div className="services-stat" key={label}><Icon aria-hidden="true"/><div><strong>{value}</strong><small>{label}</small></div></div>)}</div></div>}

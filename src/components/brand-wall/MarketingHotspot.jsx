@@ -1,0 +1,1 @@
+export default function MarketingHotspot({label,href,position,className=''}){return <a className={`brand-hotspot ${className}`} href={href} style={position} aria-label={label}><span>{label}</span></a>}

@@ -1,0 +1,10 @@
+<svg width="136" height="92" viewBox="0 0 136 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M23 18C12 11 9 4 10 1c8 5 14 6 21 3C36 1 42 1 47 4c7 3 13 2 21-3 1 4-2 11-12 17l3 7H20l3-7Z" fill="#7A2EFF"/>
+  <path d="M23 15c-8 0-13 5-13 10 6 1 11 0 15-3m31-7c8 0 13 5 13 10-6 1-11 0-15-3" stroke="#7A2EFF" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="31" cy="15" r="2" fill="white"/><circle cx="47" cy="15" r="2" fill="white"/>
+  <path d="M31 23c5 3 11 3 16 0" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <rect x="24" y="23" width="110" height="67" rx="3" fill="#7A2EFF"/>
+  <text x="36" y="38" fill="white" font-family="Arial, sans-serif" font-weight="800" font-size="9">WE ARE</text>
+  <text x="36" y="61" fill="white" font-family="Arial, sans-serif" font-weight="900" font-size="23">PURPLE</text>
+  <text x="36" y="83" fill="white" font-family="Arial, sans-serif" font-weight="900" font-size="23">COW</text>
+</svg>

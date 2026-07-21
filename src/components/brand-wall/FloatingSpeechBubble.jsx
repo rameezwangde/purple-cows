@@ -1,0 +1,1 @@
+export default function FloatingSpeechBubble({children,className=''}){return <div className={`brand-bubble ${className}`}>{children}</div>}

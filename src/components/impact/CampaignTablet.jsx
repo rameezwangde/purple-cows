@@ -1,0 +1,2 @@
+const stages=['Discover','Plan','Create','Launch','Grow']
+export default function CampaignTablet(){return <div className="campaign-tablet desk-mid" role="group" aria-label="Campaign workflow"><div className="tablet-camera"/><p>Campaign flow</p><div className="workflow">{stages.map((stage,i)=><button type="button" className={stage==='Grow'?'is-grow':''} key={stage}>{stage}{i<stages.length-1&&<span>?</span>}</button>)}</div></div>}

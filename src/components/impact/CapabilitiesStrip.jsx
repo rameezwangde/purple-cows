@@ -1,0 +1,2 @@
+import { capabilities } from '../../data/capabilities'
+export default function CapabilitiesStrip(){return <div className="capabilities-strip" aria-label="Our capabilities">{capabilities.map(({title,copy,icon:Icon})=><article className="capability" key={title}><Icon aria-hidden="true"/><div><h3>{title}</h3><p>{copy}</p></div></article>)}</div>}
