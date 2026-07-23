@@ -1,0 +1,2 @@
+import { Send } from 'lucide-react'
+export default function FormSuccess({onReset}){return <div className="ct-success" role="status"><Send aria-hidden="true"/><p>All systems go</p><h3>Message received.</h3><span>Your idea is officially in motion. We’ll be in touch soon.</span><button type="button" onClick={onReset}>Send another message</button></div>}

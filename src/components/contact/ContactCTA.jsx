@@ -1,0 +1,2 @@
+import { ArrowRight, Heart } from 'lucide-react'
+export default function ContactCTA(){return <section className="ct-cta ct-reveal"><div className="ct-cta-note">Great things<br/>happen when<br/>we collaborate.<Heart/></div><div><h2>Ready to turn your ideas into <span>impact?</span></h2><p>Let’s make it happen.</p></div><a href="mailto:hello@purplecow.agency">Book a consultation <ArrowRight/></a></section>}
