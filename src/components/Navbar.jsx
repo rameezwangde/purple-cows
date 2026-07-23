@@ -19,14 +19,14 @@ export default function Navbar() {
   return (
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
       <nav className="navbar" aria-label="Main navigation">
-        <a href="#top" className="brand" aria-label="We Are Purple Cow home">
+        <a href="/" className="brand" aria-label="We Are Purple Cow home">
           <img src={logo} alt="We Are Purple Cow" />
         </a>
 
         <div className={`nav-panel ${open ? 'is-open' : ''}`}>
           <div className="nav-links">
             {links.map((link) => (
-              <a href={`#${link.toLowerCase().replaceAll(' ', '-')}`} key={link} onClick={() => setOpen(false)}>
+              <a href={link === 'About Us' ? '/about' : `/#${link.toLowerCase().replaceAll(' ', '-')}`} key={link} onClick={() => setOpen(false)}>
                 {link}
                 {link === 'Services' && <ChevronDown size={16} strokeWidth={2.5} aria-hidden="true" />}
               </a>

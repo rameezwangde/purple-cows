@@ -1,0 +1,3 @@
+﻿import { Target } from 'lucide-react'
+export default function MissionSection(){return <section className="about-dark about-mission" aria-labelledby="mission-title"><div className="mission-copy about-reveal"><p className="about-eyebrow">Our mission</p><h2 id="mission-title">We turn bold ideas<br/>into <span>real-world results.</span></h2><p>Our mission is simple — help ambitious brands grow with clarity, creativity and performance. We blend strategy, design and technology to make your brand impossible to ignore.</p><div className="mission-target" aria-hidden="true"><span/><span/><span/><Target/></div></div><div className="values-wrap"><p className="about-eyebrow">Our values</p><ValuesSection/></div></section>}
+import ValuesSection from './ValuesSection'

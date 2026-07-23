@@ -1,0 +1,2 @@
+﻿import { aboutValues } from '../../data/aboutValues'
+export default function ValuesSection(){return <div className="about-values">{aboutValues.map(({title,copy,icon:Icon})=><article className="about-value about-reveal" key={title}><Icon aria-hidden="true"/><h3>{title}</h3><p>{copy}</p></article>)}</div>}

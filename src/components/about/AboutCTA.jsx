@@ -1,0 +1,2 @@
+﻿import { Heart } from 'lucide-react'
+export default function AboutCTA(){return <section className="about-cta" aria-label="Start a conversation"><blockquote>We don&apos;t just market brands.<br/>We build <span>movements.</span></blockquote><div className="about-cta-note">Let&apos;s build<br/>something iconic<br/><u>together.</u><Heart size={21}/></div><a href="mailto:hello@wearepurplecow.com">Start a conversation</a></section>}
