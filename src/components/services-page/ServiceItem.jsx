@@ -1,0 +1,1 @@
+﻿export default function ServiceItem({service}){const Icon=service.icon;return <article className="sp-service sp-reveal"><div className="sp-icon"><Icon aria-hidden="true"/></div><h3>{service.title}</h3><p>{service.description}</p><i aria-hidden="true"/></article>}

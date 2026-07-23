@@ -1,6 +1,8 @@
 ﻿import ReactDOM from 'react-dom/client'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
+import Services from './pages/Services'
 import './styles/hero-live.css'
 import './styles/services-orbit.css'
 import './styles/impact-workspace.css'
@@ -8,7 +10,5 @@ import './styles/brand-wall.css'
 import './styles/creative-flow.css'
 import './styles/footer.css'
 import './styles/about.css'
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  window.location.pathname === '/about' ? <About /> : <Home />,
-)
+import './styles/services-page.css'
+ReactDOM.createRoot(document.getElementById('root')).render(<BrowserRouter><Routes><Route path="/" element={<Home/>}/><Route path="/about" element={<About/>}/><Route path="/services" element={<Services/>}/><Route path="*" element={<Home/>}/></Routes></BrowserRouter>)

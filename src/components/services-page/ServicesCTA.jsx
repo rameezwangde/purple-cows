@@ -1,0 +1,2 @@
+﻿import { ArrowRight, Heart } from 'lucide-react'
+export default function ServicesCTA(){return <section className="sp-cta"><div><h2>Ready to <span>grow</span> your brand?</h2><p>Let&apos;s create something remarkable together.</p></div><a href="mailto:hello@wearepurplecow.com">Start a project <ArrowRight size={18}/></a><div className="sp-cta-note">Big ideas.<br/>Bold moves.<br/>Real impact.<Heart size={20}/></div></section>}

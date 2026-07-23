@@ -1,0 +1,3 @@
+﻿import { marketingServices } from '../../data/services'
+import ServiceItem from './ServiceItem'
+export default function ServicesGrid(){return <section className="sp-services" aria-labelledby="what-we-do"><div className="sp-overview sp-reveal"><p className="sp-eyebrow">What we do</p><h2 id="what-we-do">End-to-end services for <span>bold</span> brands.</h2><p>From strategy to execution, we deliver creative solutions that make your brand stand out and your business <u>grow</u>.</p></div><div className="sp-grid">{/* Convert service items into links when individual service pages are approved. */}{marketingServices.filter(service=>service.enabled).map(service=><ServiceItem service={service} key={service.id}/>)}</div></section>}

@@ -10,12 +10,13 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "typescript": "latest",
+    "gsap": "latest",
+    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "gsap": "latest",
-    "lucide-react": "latest"
+    "react-router-dom": "^7.18.1",
+    "typescript": "latest",
+    "vite": "latest"
   },
   "devDependencies": {
     "autoprefixer": "latest",
