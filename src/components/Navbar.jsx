@@ -21,7 +21,7 @@ const links = [
     to: '#', 
     dropdown: [
       { label: 'Strategy & Planning', to: '/solutions/strategy-and-planning' },
-      { label: 'Branding and Packaging', to: '#' },
+      { label: 'Branding and Packaging', to: '/solutions/branding-and-packaging' },
       { label: 'Web and Mobile', to: '#' },
       { label: 'Social Media Management', to: '#' },
       { label: 'Performance Marketing and SEO', to: '#' },
