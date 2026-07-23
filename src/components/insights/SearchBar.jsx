@@ -1,0 +1,2 @@
+import { Search } from 'lucide-react'
+export default function SearchBar({value,onChange}){return <label className="in-search"><span className="sr-only">Search insights</span><Search/><input value={value} onChange={e=>onChange(e.target.value)} placeholder="Search insights..."/></label>}

@@ -1,0 +1,2 @@
+import { ArrowRight, Coffee, NotebookPen } from 'lucide-react'
+export default function InsightsCTA(){return <section className="in-cta in-reveal"><div className="in-cta-still"><Coffee/><div>Curious minds<br/>create extraordinary<br/><u>results.</u> ?</div><NotebookPen/></div><div><h2>Have a project in mind?</h2><p>Let&apos;s bring your <u>ideas</u> to life.</p></div><a href="mailto:hello@wearepurplecow.com">Let&apos;s talk <ArrowRight/></a></section>}

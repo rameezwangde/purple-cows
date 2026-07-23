@@ -1,8 +1,9 @@
-﻿import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
+import Insights from './pages/Insights'
 import './styles/hero-live.css'
 import './styles/services-orbit.css'
 import './styles/impact-workspace.css'
@@ -11,4 +12,5 @@ import './styles/creative-flow.css'
 import './styles/footer.css'
 import './styles/about.css'
 import './styles/services-page.css'
-ReactDOM.createRoot(document.getElementById('root')).render(<BrowserRouter><Routes><Route path="/" element={<Home/>}/><Route path="/about" element={<About/>}/><Route path="/services" element={<Services/>}/><Route path="*" element={<Home/>}/></Routes></BrowserRouter>)
+import './styles/insights.css'
+ReactDOM.createRoot(document.getElementById('root')).render(<BrowserRouter><Routes><Route path="/" element={<Home/>}/><Route path="/about" element={<About/>}/><Route path="/services" element={<Services/>}/><Route path="/insights" element={<Insights/>}/><Route path="*" element={<Home/>}/></Routes></BrowserRouter>)

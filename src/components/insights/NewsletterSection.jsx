@@ -1,0 +1,2 @@
+import { ArrowRight, Send } from 'lucide-react'
+export default function NewsletterSection(){return <section className="in-newsletter in-reveal"><Send className="in-plane"/><h2>Get Fresh Insights<br/><span>Delivered</span> to You.</h2><p>Join our newsletter and receive the latest trends, ideas and strategies straight to your inbox.</p><form onSubmit={e=>e.preventDefault()}><label><span className="sr-only">Email address</span><input type="email" required placeholder="Enter your email address"/></label><button type="submit">Subscribe <ArrowRight/></button></form></section>}

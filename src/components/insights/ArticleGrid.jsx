@@ -1,0 +1,2 @@
+import ArticleCard from './ArticleCard'
+export default function ArticleGrid({articles}){return <section className="in-latest" id="insights-list"><p className="in-section-label">Latest Insights</p>{articles.length?<div className="in-grid">{articles.map(article=><ArticleCard article={article} key={article.id}/>)}</div>:<p className="in-empty">No insights found. Try another search.</p>}</section>}
