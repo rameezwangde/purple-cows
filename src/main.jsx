@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
+import StrategyPlanning from './pages/StrategyPlanning'
 import Contact from './pages/Contact'
 import './styles/hero-live.css'
 import './styles/services-orbit.css'
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/solutions/strategy-and-planning" element={<StrategyPlanning/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<Home/>}/>
       </Routes>

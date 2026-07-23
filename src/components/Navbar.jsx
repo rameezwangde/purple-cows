@@ -20,7 +20,7 @@ const links = [
     label: 'Solutions', 
     to: '#', 
     dropdown: [
-      { label: 'Strategy & Planning', to: '#' },
+      { label: 'Strategy & Planning', to: '/solutions/strategy-and-planning' },
       { label: 'Branding and Packaging', to: '#' },
       { label: 'Web and Mobile', to: '#' },
       { label: 'Social Media Management', to: '#' },
@@ -58,15 +58,27 @@ export default function Navbar() {
                     {link.label}
                     <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
                   </span>
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[280px] bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 flex flex-col overflow-hidden">
-                    {link.dropdown.map(dropLink => (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[320px] bg-[#111111] border border-gray-800 shadow-[0_20px_40px_rgba(122,46,255,0.15)] rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50 flex flex-col overflow-hidden before:content-[''] before:absolute before:-top-4 before:left-0 before:w-full before:h-4">
+                    {link.dropdown.map((dropLink, idx) => (
                       <Link 
                         key={dropLink.label} 
                         to={dropLink.to} 
-                        className="px-5 py-3 text-[11px] font-[700] text-gray-700 hover:text-[#7a2eff] hover:bg-gray-50 transition-colors !border-0 uppercase tracking-wider"
+                        className="relative px-6 py-4 text-[11px] font-[800] text-gray-400 hover:text-white transition-all duration-300 !border-0 uppercase tracking-widest group/item overflow-hidden"
                         onClick={() => setOpen(false)}
                       >
-                        {dropLink.label}
+                        {/* Hover Background swipe */}
+                        <span className="absolute inset-0 bg-[#7a2eff] transform -translate-x-full group-hover/item:translate-x-0 transition-transform duration-500 ease-out z-0"></span>
+                        
+                        {/* Text Content */}
+                        <span className="relative z-10 flex items-center gap-3 transform group-hover/item:translate-x-2 transition-transform duration-300">
+                          <span className="opacity-0 -ml-4 group-hover/item:opacity-100 group-hover/item:ml-0 transition-all duration-300 text-white font-serif italic text-lg leading-none">&rarr;</span>
+                          {dropLink.label}
+                        </span>
+                        
+                        {/* Subtle divider */}
+                        {idx !== link.dropdown.length - 1 && (
+                          <span className="absolute bottom-0 left-6 right-6 h-[1px] bg-gray-800/50 group-hover/item:opacity-0 transition-opacity z-10"></span>
+                        )}
                       </Link>
                     ))}
                   </div>
