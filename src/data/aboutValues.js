@@ -1,9 +1,40 @@
-﻿import { Compass, Heart, Lightbulb, Rocket, Star, Users } from 'lucide-react'
-export const aboutValues=[
- {title:'Creativity First',copy:'We believe in ideas that inspire, engage and leave a lasting impression.',icon:Lightbulb},
- {title:'Strategic Thinking',copy:'Every idea is backed by strategy and every strategy is built for impact.',icon:Compass},
- {title:'Results Driven',copy:'We measure what matters and deliver growth that moves the needle.',icon:Rocket},
- {title:'Collaborative Spirit',copy:'We work with you, not just for you. Your goals become our goals.',icon:Users},
- {title:'Honest & Transparent',copy:'No jargon. No gimmicks. Just honest work and clear communication.',icon:Heart},
- {title:'Always Evolving',copy:'The digital world changes fast. We stay ahead so you can too.',icon:Star},
-]
+import { Lightbulb, Target, BrainCircuit, Users, PenTool, TrendingUp } from 'lucide-react';
+
+export const aboutValues = [
+  {
+    id: 'curiosity',
+    title: 'Curiosity Always',
+    body: 'We ask better questions before creating answers.',
+    icon: Lightbulb
+  },
+  {
+    id: 'creativity',
+    title: 'Creativity With Purpose',
+    body: 'Every idea must connect, communicate and move something forward.',
+    icon: Target
+  },
+  {
+    id: 'strategy',
+    title: 'Strategy Before Noise',
+    body: 'We build from insight, not assumption.',
+    icon: BrainCircuit
+  },
+  {
+    id: 'collaboration',
+    title: 'Honest Collaboration',
+    body: 'We work openly, listen carefully and build together.',
+    icon: Users
+  },
+  {
+    id: 'craft',
+    title: 'Craft Matters',
+    body: 'We care about the details people notice and the ones they don’t.',
+    icon: PenTool
+  },
+  {
+    id: 'growth',
+    title: 'Growth Mindset',
+    body: 'We learn, improve and keep pushing the work further.',
+    icon: TrendingUp
+  }
+];

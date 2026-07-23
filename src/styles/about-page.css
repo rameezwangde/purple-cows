@@ -1,0 +1,139 @@
+/* about-page.css - Specific styles for the About page */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --about-dark: #101014;
+  --about-light: #F8F6F2;
+  --about-purple: #7A2EFF;
+  --about-purple-dark: #5B18D1;
+  --about-gray: #6C6C6C;
+}
+
+.about-page-wrapper {
+  background-color: var(--about-light);
+  color: var(--about-dark);
+  overflow-x: hidden;
+}
+
+/* Handwritten Font Setup */
+
+.font-handwritten {
+  font-family: 'Caveat', cursive;
+}
+
+.font-display {
+  font-family: 'Anton', 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+}
+
+.font-body {
+  font-family: 'Inter', 'Manrope', sans-serif;
+}
+
+/* Paint Transition */
+.about-paint-transition {
+  position: absolute;
+  top: -10%;
+  right: -20%;
+  bottom: -10%;
+  width: 150%;
+  background: var(--about-dark);
+  z-index: 0;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 15% 100%); /* Placeholder for paint mask */
+}
+
+@media (min-width: 1024px) {
+  .about-paint-transition {
+    clip-path: polygon(46% 0%, 100% 0%, 100% 100%, 35% 100%);
+  }
+}
+
+/* Torn Edge Effect */
+.torn-edge-black {
+  position: relative;
+}
+.torn-edge-black::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M0 0 L5 5 L10 2 L15 8 L20 3 L25 9 L30 1 L35 7 L40 4 L45 8 L50 2 L55 9 L60 3 L65 7 L70 1 L75 8 L80 4 L85 9 L90 2 L95 6 L100 0 Z' fill='%23101014'/%3E%3C/svg%3E") repeat-x;
+  background-size: 20px 8px;
+  z-index: 10;
+}
+
+.torn-edge-white {
+  position: relative;
+}
+.torn-edge-white::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M0 0 L5 5 L10 2 L15 8 L20 3 L25 9 L30 1 L35 7 L40 4 L45 8 L50 2 L55 9 L60 3 L65 7 L70 1 L75 8 L80 4 L85 9 L90 2 L95 6 L100 0 Z' fill='%23FFFFFF'/%3E%3C/svg%3E") repeat-x;
+  background-size: 20px 8px;
+  z-index: 10;
+}
+
+/* Brush Strokes */
+.brush-highlight {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  padding: 2px 8px;
+}
+.brush-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--about-dark);
+  z-index: -1;
+  transform: skewX(-10deg) scaleY(1.1);
+  border-radius: 2px;
+}
+
+.brush-underline {
+  position: relative;
+  display: inline-block;
+}
+.brush-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--about-purple);
+  border-radius: 4px;
+  transform: rotate(-1deg);
+}
+
+.paper-grain {
+  position: relative;
+}
+
+/* Custom CTA Hover */
+.magnetic-btn:hover .arrow-icon {
+  transform: translate(4px, -4px);
+}
+
+/* Navbar Active State */
+.nav-links a.active-link {
+  position: relative;
+  color: var(--about-purple) !important;
+}
+.nav-links a.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--about-purple);
+  border-radius: 2px;
+}

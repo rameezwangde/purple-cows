@@ -60,8 +60,9 @@ button { font: inherit; }
 .action-note svg { width: 60px; height: 22px; margin: 2px 7px 0 0; }
 
 .hero-right { position: absolute; z-index: 3; inset: 0 -6vw 0 37%; pointer-events: none; }
-.cow-art { position: absolute; z-index: 2; width: 110%; height: 100%; inset: 0 0 0 auto; object-fit: cover; object-position: right bottom; mix-blend-mode: multiply; }
+.cow-art { position: absolute; z-index: 2; width: 110%; height: 100%; inset: 0 0 0 auto; object-fit: cover; object-position: right bottom; mix-blend-mode: multiply; will-change: transform; transform: translateZ(0); }
 .floating-art { position: absolute; inset: 0; z-index: 4; }
+.float-item, .spark { will-change: transform; transform: translateZ(0); }
 .flight-path { position: absolute; top: 2%; left: 23%; width: 42%; height: 28%; opacity: .75; }
 .paper-plane { position: absolute; width: 105px; top: 3.2%; left: 28%; }
 .chart { position: absolute; top: 17%; left: 12%; width: 122px; height: 94px; background: rgba(255,255,255,.88); transform: rotate(-8deg); border: 1px solid #bbb; }

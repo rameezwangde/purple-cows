@@ -15,4 +15,18 @@ import './styles/about.css'
 import './styles/services-page.css'
 import './styles/insights.css'
 import './styles/contact.css'
-ReactDOM.createRoot(document.getElementById('root')).render(<BrowserRouter><Routes><Route path="/" element={<Home/>}/><Route path="/about" element={<About/>}/><Route path="/services" element={<Services/>}/><Route path="/insights" element={<Insights/>}/><Route path="/contact" element={<Contact/>}/><Route path="*" element={<Home/>}/></Routes></BrowserRouter>)
+import SmoothScrollProvider from './components/SmoothScrollProvider'
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <SmoothScrollProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/services" element={<Services/>}/>
+        <Route path="/insights" element={<Insights/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="*" element={<Home/>}/>
+      </Routes>
+    </BrowserRouter>
+  </SmoothScrollProvider>
+)
