@@ -119,7 +119,7 @@ export default function BrandingHero() {
         <div className="lg:col-span-7 flex flex-col justify-center">
           
           <h2 className="font-handwritten text-[#7a2eff] text-2xl lg:text-3xl tracking-widest mb-4">
-            BRANDING • PACKAGING • BRAND EXPERIENCES
+            BRANDING PACKAGING BRAND EXPERIENCES
           </h2>
           
           <h1 className="font-display text-7xl lg:text-[7.5rem] tracking-tighter uppercase text-[#111111] leading-[0.95] mb-6 flex flex-col gap-1">
