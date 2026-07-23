@@ -15,6 +15,7 @@ export default function StrategyHero() {
   const headlineRef = useRef(null);
   const planeRef = useRef(null);
   const lightbulbRef = useRef(null);
+  const loopsRef = useRef([]);
 
   const isVisible = useIntersectionPause(containerRef);
 
@@ -73,46 +74,47 @@ export default function StrategyHero() {
         "-=0.5"
       );
 
-      // Continuous loop: Cow breathing
-      gsap.to(cowRef.current, {
-        scaleY: 1.015,
-        scaleX: 0.985,
-        duration: 2.5,
-        ease: 'sine.inOut',
-        yoyo: true,
-        repeat: -1,
-        paused: !isVisible // Pause if not intersecting
-      });
-
-
-
-      // Continuous loop: Lightbulb pulse
-      gsap.to(lightbulbRef.current, {
-        opacity: 0.5,
-        filter: 'drop-shadow(0 0 2px rgba(122, 46, 255, 0.4))',
-        duration: 1.5,
-        ease: 'sine.inOut',
-        yoyo: true,
-        repeat: -1,
-        paused: !isVisible
-      });
-
-      // Twinkling stars
-      gsap.to('.hero-floating-star', {
-        rotation: 360,
-        scale: 1.2,
-        opacity: 0.6,
-        duration: 4,
-        ease: 'linear',
-        repeat: -1,
-        yoyo: true,
-        stagger: 0.5,
-        paused: !isVisible
-      });
+      loopsRef.current = [
+        gsap.to(cowRef.current, {
+          scaleY: 1.015,
+          scaleX: 0.985,
+          duration: 2.5,
+          ease: 'sine.inOut',
+          yoyo: true,
+          repeat: -1
+        }),
+        gsap.to(lightbulbRef.current, {
+          opacity: 0.5,
+          filter: 'drop-shadow(0 0 2px rgba(122, 46, 255, 0.4))',
+          duration: 1.5,
+          ease: 'sine.inOut',
+          yoyo: true,
+          repeat: -1
+        }),
+        gsap.to('.hero-floating-star', {
+          rotation: 360,
+          scale: 1.2,
+          opacity: 0.6,
+          duration: 4,
+          ease: 'linear',
+          repeat: -1,
+          yoyo: true,
+          stagger: 0.5
+        })
+      ];
 
     }, containerRef);
 
     return () => ctx.revert();
+  }, []);
+
+  React.useEffect(() => {
+    loopsRef.current.forEach(loop => {
+      if (loop) {
+        if (isVisible) loop.play();
+        else loop.pause();
+      }
+    });
   }, [isVisible]);
 
   return (

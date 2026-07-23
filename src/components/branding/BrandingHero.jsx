@@ -14,6 +14,7 @@ export default function BrandingHero() {
   const bgPaintRef = useRef(null);
   const planeRef = useRef(null);
   const lightbulbRef = useRef(null);
+  const loopsRef = useRef([]);
 
   const isVisible = useIntersectionPause(containerRef);
 
@@ -72,40 +73,28 @@ export default function BrandingHero() {
         "-=2"
       );
 
-      gsap.to(imageRef.current, {
-        y: -15,
-        duration: 3,
-        ease: 'sine.inOut',
-        yoyo: true,
-        repeat: -1,
-        paused: !isVisible
-      });
-
-      gsap.to(lightbulbRef.current, {
-        opacity: 0.5,
-        filter: 'drop-shadow(0 0 2px rgba(122, 46, 255, 0.4))',
-        duration: 1.5,
-        ease: 'sine.inOut',
-        yoyo: true,
-        repeat: -1,
-        paused: !isVisible
-      });
-
-      gsap.to('.hero-floating-star', {
-        rotation: 360,
-        scale: 1.2,
-        opacity: 0.6,
-        duration: 4,
-        ease: 'linear',
-        repeat: -1,
-        yoyo: true,
-        stagger: 0.5,
-        paused: !isVisible
-      });
+      loopsRef.current = [
+        gsap.to(imageRef.current, {
+          y: -15,
+          duration: 3,
+          ease: 'sine.inOut',
+          yoyo: true,
+          repeat: -1
+        })
+      ];
 
     }, containerRef);
 
     return () => ctx.revert();
+  }, []);
+
+  React.useEffect(() => {
+    loopsRef.current.forEach(loop => {
+      if (loop) {
+        if (isVisible) loop.play();
+        else loop.pause();
+      }
+    });
   }, [isVisible]);
 
   return (

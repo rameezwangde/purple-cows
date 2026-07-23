@@ -100,6 +100,7 @@ export default function BrandingApproach() {
       );
 
       const cards = gsap.utils.toArray('.approach-card');
+      const cleanups = [];
       cards.forEach(card => {
         const onMove = (e) => {
           const rect = card.getBoundingClientRect();
@@ -121,11 +122,13 @@ export default function BrandingApproach() {
         card.addEventListener('pointermove', onMove, { passive: true });
         card.addEventListener('pointerleave', onLeave);
         
-        return () => {
+        cleanups.push(() => {
           card.removeEventListener('pointermove', onMove);
           card.removeEventListener('pointerleave', onLeave);
-        };
+        });
       });
+
+      return () => cleanups.forEach(fn => fn());
 
     }, sectionRef);
 

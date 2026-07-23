@@ -1,14 +1,17 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 export function useMouseParallax(containerRef, targets, active = true) {
+  const targetsRef = useRef(targets);
+  targetsRef.current = targets;
+
   useEffect(() => {
     if (!active || !containerRef.current || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     const container = containerRef.current;
     
     // Convert targets to a unified array format
-    const targetConfigs = Array.isArray(targets) ? targets : [targets];
+    const targetConfigs = Array.isArray(targetsRef.current) ? targetsRef.current : [targetsRef.current];
     
     // Select elements and prepare them
     const elements = targetConfigs.map(config => {
@@ -61,5 +64,5 @@ export function useMouseParallax(containerRef, targets, active = true) {
         if (el) gsap.set(el, { x: 0, y: 0, rotation: 0 });
       });
     };
-  }, [active, containerRef, targets]);
+  }, [active, containerRef]);
 }

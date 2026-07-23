@@ -87,6 +87,7 @@ export default function StrategyApproach() {
 
       // Card hover 3D tilt logic (optimized, no React state re-renders)
       const cards = gsap.utils.toArray('.approach-card');
+      const cleanups = [];
       cards.forEach(card => {
         const onMove = (e) => {
           const rect = card.getBoundingClientRect();
@@ -108,11 +109,13 @@ export default function StrategyApproach() {
         card.addEventListener('pointermove', onMove, { passive: true });
         card.addEventListener('pointerleave', onLeave);
         
-        return () => {
+        cleanups.push(() => {
           card.removeEventListener('pointermove', onMove);
           card.removeEventListener('pointerleave', onLeave);
-        };
+        });
       });
+
+      return () => cleanups.forEach(fn => fn());
 
     }, sectionRef);
 
