@@ -89,7 +89,7 @@ export default function InnerCodeSection() {
         {/* Left Side (35%) */}
         <div className="w-full lg:w-[35%] h-full flex flex-col pt-12 lg:pt-32 relative">
           
-          <h2 className="font-display text-7xl lg:text-8xl leading-[0.85] tracking-tight mb-8">
+          <h2 className="font-display text-6xl lg:text-8xl leading-[0.85] tracking-tight mb-8">
             <div className="overflow-hidden pb-4 -mb-4"><div className="inner-title-word">OUR</div></div>
             <div className="overflow-hidden pb-4 -mb-4"><div className="inner-title-word">INNER</div></div>
             <div className="overflow-hidden relative inline-block pb-6 -mb-6">
@@ -105,8 +105,8 @@ export default function InnerCodeSection() {
           </p>
 
           {/* Doodles */}
-          <div className="absolute top-1/4 -left-8 float-slow opacity-50"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7B2EFF" strokeWidth="2"><path d="M12 2L22 22L12 18L2 22L12 2Z"/></svg></div>
-          <div className="absolute bottom-1/4 right-12 float-fast opacity-40"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeDasharray="4 4"><circle cx="12" cy="12" r="10"/></svg></div>
+          <div className="hidden lg:block absolute top-1/4 -left-8 float-slow opacity-50"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7B2EFF" strokeWidth="2"><path d="M12 2L22 22L12 18L2 22L12 2Z"/></svg></div>
+          <div className="hidden lg:block absolute bottom-1/4 right-12 float-fast opacity-40"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeDasharray="4 4"><circle cx="12" cy="12" r="10"/></svg></div>
         </div>
 
         {/* Right Side (65%) - Constellation */}
