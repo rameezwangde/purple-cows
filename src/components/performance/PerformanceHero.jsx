@@ -21,13 +21,13 @@ export default function PerformanceHero() {
       tl.from('.pm-visual-composite', {
         y: 100,
         opacity: 0,
-        duration: 1.5,
+        duration: 0.8,
         ease: 'power3.out'
-      }, 0.2);
+      }, 0);
 
       // 2. Eyebrow and Subtitle
-      tl.from('.pm-top-label', { x: -20, opacity: 0, duration: 0.8, ease: 'power2.out' }, 0.4)
-        .from('.pm-subtitle', { x: -20, opacity: 0, duration: 0.8, ease: 'power2.out' }, 0.5);
+      tl.from('.pm-top-label', { x: -20, opacity: 0, duration: 0.6, ease: 'power2.out' }, 0)
+        .from('.pm-subtitle', { x: -20, opacity: 0, duration: 0.6, ease: 'power2.out' }, 0.1);
 
       // 3. Header reveal
       const splitChars = gsap.utils.toArray('.pm-heading .split-char');
@@ -35,39 +35,39 @@ export default function PerformanceHero() {
         y: 100,
         opacity: 0,
         rotationX: -45,
-        stagger: 0.02,
-        duration: 0.8,
+        stagger: 0.01,
+        duration: 0.6,
         ease: 'back.out(1.5)'
-      }, 0.6);
+      }, 0.2);
 
       // 4. Underline draws
       tl.from('.pm-underline path', {
         strokeDashoffset: 1000,
         opacity: 0,
-        duration: 1,
+        duration: 0.8,
         ease: 'power2.inOut'
-      }, 1.2);
+      }, 0.4);
 
       // 5. Supporting Text
-      tl.from('.pm-supporting-text', { y: 20, opacity: 0, duration: 0.8 }, 1.4);
+      tl.from('.pm-supporting-text', { y: 20, opacity: 0, duration: 0.6 }, 0.4);
 
       // 6. Feature columns stagger
       tl.from('.pm-feature-col', {
         y: 40,
         opacity: 0,
-        stagger: 0.15,
-        duration: 0.8,
+        stagger: 0.1,
+        duration: 0.6,
         ease: 'power2.out'
-      }, 1.5);
+      }, 0.5);
 
       // 7. Stats stagger
       tl.from('.pm-stat-item', {
         y: 30,
         opacity: 0,
         stagger: 0.1,
-        duration: 0.8,
+        duration: 0.6,
         ease: 'power2.out'
-      }, 1.8);
+      }, 0.6);
 
     }, containerRef);
 
