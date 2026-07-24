@@ -164,7 +164,7 @@ button { font: inherit; }
   .flight-path { width: 55%; left: -3%; top: -2%; }
   .target { width: 70px; height: 70px; left: 4%; top: 38%; }
   .target span { border-width: 4px; }
-  .strategy { right: 2%; top: 15%; transform: scale(0.7); }
+  .strategy { right: auto; left: 4%; top: 20%; transform: scale(0.7); transform-origin: left center; }
   .spark { right: 5%; top: 30%; font-size: 20px; }
   .steam { width: 36px; left: 22%; top: 44%; }
   .desk-note { right: 2%; bottom: 1%; padding: 8px 14px; font-size: 19px; }
