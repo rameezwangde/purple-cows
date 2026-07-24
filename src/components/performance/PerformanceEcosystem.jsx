@@ -130,7 +130,6 @@ export default function PerformanceEcosystem() {
             <li><ChevronRight className="bullet-icon"/> Local & Global Search Optimization</li>
             <li><ChevronRight className="bullet-icon"/> SEO Performance Reporting</li>
           </ul>
-          <div className="eco-torn-base"></div>
         </div>
 
         {/* Column 2 */}
@@ -155,7 +154,6 @@ export default function PerformanceEcosystem() {
             <li><ChevronRight className="bullet-icon"/> ROAS & Revenue Optimization</li>
             <li><ChevronRight className="bullet-icon"/> Landing Page Performance Testing</li>
           </ul>
-          <div className="eco-torn-base"></div>
         </div>
 
         {/* Column 3 */}
@@ -180,11 +178,11 @@ export default function PerformanceEcosystem() {
             <li><ChevronRight className="bullet-icon"/> Retargeting & Remarketing</li>
             <li><ChevronRight className="bullet-icon"/> Continuous Campaign Optimization</li>
           </ul>
-          <div className="eco-torn-base"></div>
         </div>
 
       </div>
 
+      <div className="eco-torn-base"></div>
     </section>
   );
 }

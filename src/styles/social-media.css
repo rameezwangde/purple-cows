@@ -104,7 +104,7 @@
     font-weight: 700;
     letter-spacing: 0.25em;
     color: #111111;
-    white-space: nowrap;
+    /* Removed white-space: nowrap to prevent mobile overflow */
     text-transform: uppercase;
   }
   
@@ -135,6 +135,9 @@
     font-size: 1.15em;
     letter-spacing: 0;
     color: #7a2eff;
+    line-height: 1.2;
+    display: block;
+    margin: 15px 0;
   }
   
   /* FEATURE COLUMNS (3 Columns) */

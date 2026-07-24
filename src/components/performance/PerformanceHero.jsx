@@ -91,7 +91,8 @@ export default function PerformanceHero() {
         </div>
 
         <h1 className="pm-heading">
-          <SplitText type="chars" text="PERFORMANCE MARKETING" /><br/>
+          <SplitText type="chars" text="PERFORMANCE" /><br/>
+          <SplitText type="chars" text="MARKETING" /><br/>
           <SplitText type="chars" text="& SEO THAT " />
           <span className="pm-brush-font">
             <SplitText type="chars" text="SCALES." />
