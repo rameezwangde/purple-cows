@@ -19,7 +19,7 @@ const links = [
       { label: 'Branding & Packaging', to: '/solutions/branding-and-packaging' },
       { label: 'Web & Mobile', to: '/solutions/web-and-mobile' },
       { label: 'Social Media Management', to: '/solutions/social-media-management' },
-      { label: 'Performance Marketing and SEO', to: '/solutions/performance-marketing' },
+      { label: 'Performance & SEO', to: '/solutions/performance-marketing' },
       { label: 'Offline Creative', to: '/solutions/offline-creative' },
       { label: 'Films & Photoshoots', to: '/solutions/films-and-photoshoots' }
     ] 

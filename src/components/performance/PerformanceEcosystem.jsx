@@ -13,33 +13,30 @@ export default function PerformanceEcosystem() {
     if (reduced) return;
 
     let ctx = gsap.context(() => {
+      // Removed animations as per request to make text appear instantly
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
-          start: 'top 75%',
+          start: 'top 90%',
         }
       });
 
-      // 1. Label and Underline
-      tl.from('.eco-eyebrow-text', { y: 20, opacity: 0, duration: 0.6, ease: 'power2.out' })
-        .from('.eco-eyebrow-rays', { scale: 0, opacity: 0, duration: 0.4, ease: 'back.out(2)' }, "-=0.4")
+      // 1. Label and Underline (instant, but keeping the drawn line animation)
+      tl.from('.eco-eyebrow-rays', { scale: 0, opacity: 0, duration: 0.4, ease: 'back.out(2)' })
         .from('.eco-header-underline path', { strokeDashoffset: 1000, opacity: 0, duration: 0.8, ease: 'power2.inOut' }, "-=0.2");
 
       // 2. Doodles fade in
-      tl.from('.eco-decor', { opacity: 0, scale: 0.8, stagger: 0.1, duration: 0.8 }, "-=0.4");
+      tl.from('.eco-decor', { opacity: 0, scale: 0.8, stagger: 0.1, duration: 0.4 }, "-=0.4");
 
-      // 3. Columns Content Reveal
-      tl.from('.eco-col-icon', { scale: 0, rotation: -45, stagger: 0.15, duration: 0.6, ease: 'back.out(1.5)' }, "-=0.2")
-        .from('.eco-col-heading', { y: 20, opacity: 0, stagger: 0.15, duration: 0.5 }, "-=0.4")
-        .from('.eco-col-underline path', { strokeDashoffset: 500, opacity: 0, stagger: 0.15, duration: 0.6, ease: 'power2.inOut' }, "-=0.4")
-        .from('.eco-list li', { x: -10, opacity: 0, stagger: 0.05, duration: 0.4, ease: 'power2.out' }, "-=0.4");
+      // 3. Columns Content Reveal (keep only the icons and underlines, text appears instantly)
+      tl.from('.eco-col-icon', { scale: 0, rotation: -45, stagger: 0.1, duration: 0.4, ease: 'back.out(1.5)' }, "-=0.2")
+        .from('.eco-col-underline path', { strokeDashoffset: 500, opacity: 0, stagger: 0.1, duration: 0.4, ease: 'power2.inOut' }, "-=0.4");
 
       // 4. Bottom Torn Paper slides up
       tl.from('.eco-torn-base', {
-        y: 100,
+        y: 50,
         opacity: 0,
-        stagger: 0.1,
-        duration: 0.8,
+        duration: 0.5,
         ease: 'power3.out'
       }, "-=0.4");
 
