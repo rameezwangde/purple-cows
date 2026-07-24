@@ -9,12 +9,7 @@ const links = [
   { label: 'About Us', to: '/about' },
   { 
     label: 'Work', 
-    to: '#', 
-    dropdown: [
-      { label: 'Case Studies', to: '#' },
-      { label: 'Creative Portfolio', to: '#' },
-      { label: 'Campaigns', to: '#' }
-    ] 
+    to: '#' 
   },
   { 
     label: 'Solutions', 
