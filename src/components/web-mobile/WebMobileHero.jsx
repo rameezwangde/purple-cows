@@ -41,27 +41,7 @@ export default function WebMobileHero() {
         delay: 0.5
       });
 
-      // 3. Floating loops (infinite animations)
-      const plane = gsap.to('.wm-plane', {
-        y: -15,
-        x: 10,
-        rotation: 3,
-        duration: 3,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut'
-      });
-      loopsRef.current.push(plane);
-
-      const note = gsap.to('.wm-sticky-sway', {
-        rotation: 2,
-        transformOrigin: 'top center',
-        duration: 2.5,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut'
-      });
-      loopsRef.current.push(note);
+      // 3. Floating loops (removed because elements are baked into image now)
     }, containerRef);
 
     // Pause loops when out of view
@@ -90,26 +70,8 @@ export default function WebMobileHero() {
     <section className="wm-hero" ref={containerRef}>
       {/* Left Column (42%) */}
       <div className="wm-hero-left">
-        {/* Placeholder for raw transparent assets. For now, we render the provided composite reference image clipped to match scale. */}
         <div className="wm-visual-composite">
           <img src={heroImg} alt="Purple Cow Web & Mobile" className="wm-raw-composite" />
-          
-          {/* We overlay interactive/floating elements on top of the composite to give it life */}
-          <div className="wm-plane" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" fill="#7a2eff" stroke="#5d16d1"/>
-            </svg>
-          </div>
-
-          <div className="wm-sticky wm-sticky-sway">
-            <div className="wm-tape"></div>
-            <ul>
-              <li>Strategy</li>
-              <li className="text-purple">Design</li>
-              <li>Code</li>
-              <li>Impact</li>
-            </ul>
-          </div>
         </div>
       </div>
 

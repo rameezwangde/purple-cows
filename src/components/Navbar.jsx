@@ -23,8 +23,8 @@ const links = [
       { label: 'Strategy & Planning', to: '/solutions/strategy-and-planning' },
       { label: 'Branding & Packaging', to: '/solutions/branding-and-packaging' },
       { label: 'Web & Mobile', to: '/solutions/web-and-mobile' },
-      { label: 'Social Media Management', to: '#' },
-      { label: 'Performance Marketing and SEO', to: '#' },
+      { label: 'Social Media Management', to: '/solutions/social-media-management' },
+      { label: 'Performance Marketing and SEO', to: '/solutions/performance-marketing' },
       { label: 'Offline Creative', to: '#' },
       { label: 'Films & Photoshoots', to: '#' }
     ] 

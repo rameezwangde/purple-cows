@@ -6,6 +6,8 @@ import StrategyPlanning from './pages/StrategyPlanning'
 import BrandingPackaging from './pages/BrandingPackaging'
 import Contact from './pages/Contact'
 import WebAndMobile from './pages/WebAndMobile'
+import SocialMedia from './pages/SocialMedia'
+import PerformanceMarketing from './pages/PerformanceMarketing'
 import './styles/hero-live.css'
 import './styles/services-orbit.css'
 import './styles/impact-workspace.css'
@@ -26,6 +28,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/solutions/strategy-and-planning" element={<StrategyPlanning/>}/>
         <Route path="/solutions/branding-and-packaging" element={<BrandingPackaging/>}/>
         <Route path="/solutions/web-and-mobile" element={<WebAndMobile/>}/>
+        <Route path="/solutions/social-media-management" element={<SocialMedia/>}/>
+        <Route path="/solutions/performance-marketing" element={<PerformanceMarketing/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<Home/>}/>
       </Routes>
