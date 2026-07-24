@@ -25,8 +25,8 @@ const links = [
       { label: 'Web & Mobile', to: '/solutions/web-and-mobile' },
       { label: 'Social Media Management', to: '/solutions/social-media-management' },
       { label: 'Performance Marketing and SEO', to: '/solutions/performance-marketing' },
-      { label: 'Offline Creative', to: '#' },
-      { label: 'Films & Photoshoots', to: '#' }
+      { label: 'Offline Creative', to: '/solutions/offline-creative' },
+      { label: 'Films & Photoshoots', to: '/solutions/films-and-photoshoots' }
     ] 
   },
   { label: 'Contact', to: '/contact' }

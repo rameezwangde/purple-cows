@@ -8,6 +8,8 @@ import Contact from './pages/Contact'
 import WebAndMobile from './pages/WebAndMobile'
 import SocialMedia from './pages/SocialMedia'
 import PerformanceMarketing from './pages/PerformanceMarketing'
+import OfflineCreative from './pages/OfflineCreative'
+import FilmsPhotoshoots from './pages/FilmsPhotoshoots'
 import './styles/hero-live.css'
 import './styles/services-orbit.css'
 import './styles/impact-workspace.css'
@@ -30,6 +32,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/solutions/web-and-mobile" element={<WebAndMobile/>}/>
         <Route path="/solutions/social-media-management" element={<SocialMedia/>}/>
         <Route path="/solutions/performance-marketing" element={<PerformanceMarketing/>}/>
+        <Route path="/solutions/offline-creative" element={<OfflineCreative/>}/>
+        <Route path="/solutions/films-and-photoshoots" element={<FilmsPhotoshoots/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<Home/>}/>
       </Routes>
