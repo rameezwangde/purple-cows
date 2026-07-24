@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
+import Work from './pages/Work'
 import StrategyPlanning from './pages/StrategyPlanning'
 import BrandingPackaging from './pages/BrandingPackaging'
 import Contact from './pages/Contact'
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/work" element={<Work/>}/>
         <Route path="/solutions/strategy-and-planning" element={<StrategyPlanning/>}/>
         <Route path="/solutions/branding-and-packaging" element={<BrandingPackaging/>}/>
         <Route path="/solutions/web-and-mobile" element={<WebAndMobile/>}/>

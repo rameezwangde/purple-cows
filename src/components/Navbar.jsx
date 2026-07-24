@@ -9,7 +9,7 @@ const links = [
   { label: 'About Us', to: '/about' },
   { 
     label: 'Work', 
-    to: '#' 
+    to: '/work' 
   },
   { 
     label: 'Solutions', 
@@ -82,7 +82,7 @@ export default function Navbar() {
                 <NavLink 
                   to={link.to} 
                   key={link.label} 
-                  onClick={() => setOpen(false)} 
+                  onClick={() => setOpen(false)}
                   className={({ isActive }) => isActive ? 'active-link' : ''}
                 >
                   {link.label}

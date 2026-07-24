@@ -90,11 +90,11 @@ export default function InnerCodeSection() {
         <div className="w-full lg:w-[35%] h-full flex flex-col pt-12 lg:pt-32 relative">
           
           <h2 className="font-display text-7xl lg:text-8xl leading-[0.85] tracking-tight mb-8">
-            <div className="overflow-hidden"><div className="inner-title-word">OUR</div></div>
-            <div className="overflow-hidden"><div className="inner-title-word">INNER</div></div>
-            <div className="overflow-hidden relative inline-block">
+            <div className="overflow-hidden pb-4 -mb-4"><div className="inner-title-word">OUR</div></div>
+            <div className="overflow-hidden pb-4 -mb-4"><div className="inner-title-word">INNER</div></div>
+            <div className="overflow-hidden relative inline-block pb-6 -mb-6">
               <div className="inner-title-word">CODE.</div>
-              <svg className="inner-underline absolute -bottom-4 left-0 w-[110%] h-6 text-[#7B2EFF] pointer-events-none" viewBox="0 0 200 20" preserveAspectRatio="none">
+              <svg className="inner-underline absolute bottom-0 left-0 w-[110%] h-6 text-[#7B2EFF] pointer-events-none" viewBox="0 0 200 20" preserveAspectRatio="none">
                 <path d="M5 10 Q 50 18 100 8 T 195 12" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/>
               </svg>
             </div>
@@ -126,11 +126,19 @@ export default function InnerCodeSection() {
           </svg>
 
           {/* Principle Nodes */}
-          <div className="w-full flex flex-col gap-6 lg:block relative z-20">
+          <style>{`
+            @media (min-width: 1024px) {
+              .principle-node {
+                left: var(--lg-left) !important;
+                top: var(--lg-top) !important;
+              }
+            }
+          `}</style>
+          <div className="w-full flex flex-col gap-6 lg:block relative z-20 lg:h-full">
             {principles.map((p, index) => (
               <div 
                 key={p.id} 
-                className={`principle-node relative lg:absolute group cursor-pointer w-full max-w-[320px] lg:max-w-none lg:w-[220px] z-20 hover:z-50 will-change-transform transform-gpu ${index % 2 === 0 ? 'float-slow' : 'float-fast'} !left-auto lg:!left-[${p.x}] !top-auto lg:!top-[${p.y}] mx-auto lg:mx-0`}
+                className={`principle-node relative lg:absolute group cursor-pointer w-full max-w-[320px] lg:max-w-none lg:w-[220px] z-20 hover:z-50 will-change-transform transform-gpu ${index % 2 === 0 ? 'float-slow' : 'float-fast'} mx-auto lg:mx-0`}
                 style={{ '--lg-left': p.x, '--lg-top': p.y }}
               >
                 <div className="relative">
