@@ -90,9 +90,9 @@ export default function InnerCodeSection() {
         <div className="w-full lg:w-[35%] h-full flex flex-col pt-12 lg:pt-32 relative">
           
           <h2 className="font-display text-6xl lg:text-8xl leading-[0.85] tracking-tight mb-8">
-            <div className="overflow-hidden pb-4 -mb-4"><div className="inner-title-word">OUR</div></div>
-            <div className="overflow-hidden pb-4 -mb-4"><div className="inner-title-word">INNER</div></div>
-            <div className="overflow-hidden relative inline-block pb-6 -mb-6">
+            <div className="overflow-hidden pb-4 -mb-4 pr-4 -mr-4"><div className="inner-title-word">OUR</div></div>
+            <div className="overflow-hidden pb-4 -mb-4 pr-4 -mr-4"><div className="inner-title-word">INNER</div></div>
+            <div className="overflow-hidden relative inline-block pb-6 -mb-6 pr-4 -mr-4">
               <div className="inner-title-word">CODE.</div>
               <svg className="inner-underline absolute bottom-0 left-0 w-[110%] h-6 text-[#7B2EFF] pointer-events-none" viewBox="0 0 200 20" preserveAspectRatio="none">
                 <path d="M5 10 Q 50 18 100 8 T 195 12" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/>
