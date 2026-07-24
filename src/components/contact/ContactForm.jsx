@@ -8,6 +8,7 @@ import FormSuccess from './FormSuccess'
 const FieldError=({id,error})=>error?<p className="ct-error" id={id} role="alert"><b>!</b> {error.message}</p>:null
 export default function ContactForm() {
   const [success, setSuccess] = useState(false);
+  const [urls, setUrls] = useState(null);
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm({
     resolver: zodResolver(contactSchema),
     defaultValues: { name: '', email: '', company: '', phone: '', service: '', message: '' }
@@ -19,26 +20,21 @@ export default function ContactForm() {
     
     // 1. WhatsApp redirection
     const waUrl = `https://wa.me/919769402412?text=${encodeURIComponent(text)}`;
-    window.open(waUrl, '_blank');
     
     // 2. Email redirection
     const mailUrl = `mailto:contactus@wearepurplecow.com?subject=New Lead from ${encodeURIComponent(data.name)}&body=${encodeURIComponent(text)}`;
-    const mailLink = document.createElement('a');
-    mailLink.href = mailUrl;
-    // Appending to body is required for some browsers
-    document.body.appendChild(mailLink);
-    mailLink.click();
-    document.body.removeChild(mailLink);
-
+    
+    setUrls({ waUrl, mailUrl });
     setSuccess(true);
   };
 
   const restart = () => {
     reset();
     setSuccess(false);
+    setUrls(null);
   };
 
-  if (success) return <FormSuccess onReset={restart} />;
+  if (success) return <FormSuccess onReset={restart} urls={urls} />;
 
   return (
     <form className="ct-form" id="contact-form" onSubmit={handleSubmit(submit)} noValidate>
