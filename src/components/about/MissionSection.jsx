@@ -44,7 +44,7 @@ export default function MissionSection() {
   }, []);
 
   return (
-    <section ref={containerRef} className="py-24 lg:py-32 bg-[#F8F6F2] text-black overflow-hidden">
+    <section ref={containerRef} className="pt-24 pb-12 lg:pt-32 lg:pb-16 bg-[#F8F6F2] text-black overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           

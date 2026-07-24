@@ -78,7 +78,7 @@ export default function InnerCodeSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen lg:min-h-[120vh] bg-[#F8F6F3] overflow-hidden text-[#111111] py-24 border-t border-gray-300/50">
+    <section ref={sectionRef} className="relative min-h-screen lg:min-h-[120vh] bg-[#F8F6F3] overflow-hidden text-[#111111] pt-12 pb-24 lg:pt-16 lg:pb-32 border-t border-gray-300/50">
       
       {/* Lightweight CSS Pattern Background instead of heavy SVG filter */}
       <div className="absolute inset-0 z-0 opacity-40 pointer-events-none bg-[radial-gradient(#111_1px,transparent_1px)] [background-size:24px_24px]"></div>
@@ -87,7 +87,7 @@ export default function InnerCodeSection() {
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12 h-full flex flex-col lg:flex-row relative z-20">
         
         {/* Left Side (35%) */}
-        <div className="w-full lg:w-[35%] h-full flex flex-col pt-12 lg:pt-32 relative">
+        <div className="w-full lg:w-[35%] h-full flex flex-col pt-4 lg:pt-8 relative">
           
           <h2 className="font-display text-6xl lg:text-8xl leading-[0.85] tracking-tight mb-8">
             <div className="overflow-hidden pb-4 -mb-4 pr-4 -mr-4"><div className="inner-title-word">OUR</div></div>
