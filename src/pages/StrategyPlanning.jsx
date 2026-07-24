@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import StrategyHero from '../components/strategy/StrategyHero';
-import StrategyApproach from '../components/strategy/StrategyApproach';
-import StrategyImpact from '../components/strategy/StrategyImpact';
+import CreativeHero from '../components/creative/CreativeHero';
+import '../styles/creative.css';
+import StrategyAbout from '../components/strategy/StrategyAbout';
+import StrategySolutions from '../components/strategy/StrategySolutions';
 
 export default function StrategyPlanning() {
   // Ensure we start at the top of the page on route load
@@ -16,9 +17,9 @@ export default function StrategyPlanning() {
       <Navbar />
       
       <main>
-        <StrategyHero />
-        <StrategyApproach />
-        <StrategyImpact />
+        <CreativeHero />
+        <StrategyAbout />
+        <StrategySolutions />
       </main>
 
       <Footer />

@@ -103,7 +103,7 @@ export default function Navbar() {
           <BrushButton compact>Let's talk</BrushButton>
         </div>
         <button 
-          className="menu-toggle" 
+          className="menu-toggle relative z-50 ml-auto"
           type="button" 
           aria-label={open ? 'Close menu' : 'Open menu'} 
           aria-expanded={open} 

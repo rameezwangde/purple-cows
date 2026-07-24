@@ -120,7 +120,7 @@ button { font: inherit; }
   .navbar { width: calc(100% - 32px); grid-template-columns: 1fr auto; }
   .brand, .site-header.is-scrolled .brand { width: 88px; margin-top: 1px; }
   .desktop-talk { display: none; }
-  .menu-toggle { display: grid; place-items: center; width: 46px; height: 46px; border: 0; border-radius: 50%; color: white; background: #111; cursor: pointer; }
+  .menu-toggle { display: grid !important; place-items: center; width: 46px; height: 46px; border: 0; border-radius: 50%; color: white; background: #111; cursor: pointer; }
   .nav-panel { position: fixed; inset: 78px 0 auto; padding: 28px 24px 35px; background: var(--paper); border-top: 1px solid #eee; box-shadow: 0 20px 30px rgba(0,0,0,.08); transform: translateY(-130%); opacity: 0; visibility: hidden; transition: transform .45s cubic-bezier(.22,1,.36,1), opacity .25s, visibility .45s; }
   .nav-panel.is-open { transform: translateY(0); opacity: 1; visibility: visible; }
   .nav-links { flex-direction: column; gap: 4px; align-items: stretch; }
