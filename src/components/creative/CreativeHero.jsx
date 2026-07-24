@@ -27,9 +27,7 @@ export default function CreativeHero() {
       }, 0.2);
 
       // 2. Left Side Brand & Subtitle
-      tl.from('.cr-brand-top', { y: 20, opacity: 0, duration: 0.8 }, 0.4)
-        .from('.cr-subtitle-wrap', { y: 20, opacity: 0, duration: 0.8 }, 0.5)
-        .from('.cr-divider-line', { scaleX: 0, transformOrigin: 'left', duration: 1 }, 0.6);
+
 
       // 3. Headline Reveal using SplitText
       const splitChars = gsap.utils.toArray('.cr-headline .split-char');
@@ -107,16 +105,7 @@ export default function CreativeHero() {
       {/* LEFT COLUMN */}
       <div className="cr-hero-left">
         
-        {/* Brand */}
-        <div className="cr-brand-top">
-          <div className="cr-brand-name">
-            PURPLE <span className="cr-brand-cow">Cow</span>
-          </div>
-          <div className="cr-subtitle-wrap">
-            <span className="cr-subtitle">CREATIVE PRODUCTION<br/>AND CONTENT SOLUTIONS</span>
-            <div className="cr-divider-line"></div>
-          </div>
-        </div>
+
 
         {/* Paper Airplane and Path SVG */}
         <div className="cr-plane-path">
