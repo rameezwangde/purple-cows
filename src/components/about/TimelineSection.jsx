@@ -132,7 +132,7 @@ export default function TimelineSection() {
             {/* MILESTONE 2009 - Left (Notebook) */}
             <div className="milestone-node flex flex-col lg:flex-row items-center w-full min-h-[300px]">
               <div className="w-full lg:w-[45%] flex justify-end pr-0 lg:pr-16 order-2 lg:order-1 mt-6 lg:mt-0">
-                <div className="parallax-sticky bg-[#F8F6F2] text-black p-6 shadow-xl transform -rotate-2 relative w-[280px]">
+                <div className="parallax-sticky bg-[#F8F6F2] text-black p-6 shadow-xl transform -rotate-2 relative w-full max-w-[280px]">
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-4 bg-purple-500/80 rotate-1"></div>
                   <div className="w-full h-32 bg-gray-300 flex items-center justify-center text-sm font-medium text-gray-600 mb-4 overflow-hidden relative">
                     <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80&w=800" alt="Notebook sketch" className="w-full h-full object-cover relative z-10 opacity-90 mix-blend-multiply" />
@@ -164,7 +164,7 @@ export default function TimelineSection() {
                 <div className="w-4 h-4 bg-[#101014] border-2 border-[#7A2EFF] rounded-full z-10 shadow-[0_0_15px_rgba(122,46,255,0.6)]"></div>
               </div>
               <div className="w-full lg:w-[45%] pl-0 lg:pl-16 order-2 lg:order-3 mt-6 lg:mt-0 flex justify-start">
-                <div className="parallax-photo bg-white p-4 pb-12 shadow-2xl transform rotate-3 relative w-[300px] hover:scale-105 hover:-rotate-1 transition-transform duration-300">
+                <div className="parallax-photo bg-white p-4 pb-12 shadow-2xl transform rotate-3 relative w-full max-w-[300px] hover:scale-105 hover:-rotate-1 transition-transform duration-300">
                   <div className="absolute -top-4 right-4 text-black"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2L15 8H9L12 2Z"/><path d="M12 8V22"/></svg></div>
                   <div className="w-full h-40 bg-gray-200 border-2 border-dashed border-gray-400 flex items-center justify-center overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=800" alt="Website wireframe" className="w-full h-full object-cover opacity-90 mix-blend-multiply" />
@@ -177,7 +177,7 @@ export default function TimelineSection() {
             {/* MILESTONE 2013 - Left (Brainstorming) */}
             <div className="milestone-node flex flex-col lg:flex-row items-center w-full min-h-[300px] lg:mt-[-50px]">
               <div className="w-full lg:w-[45%] flex justify-end pr-0 lg:pr-16 order-2 lg:order-1 mt-6 lg:mt-0">
-                <div className="parallax-photo bg-white p-2 shadow-2xl transform -rotate-1 relative w-[320px] group">
+                <div className="parallax-photo bg-white p-2 shadow-2xl transform -rotate-1 relative w-full max-w-[320px] group">
                   <div className="w-full h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden">
                      <img src="https://images.unsplash.com/photo-1531498860502-7c67cf02f657?auto=format&fit=crop&q=80&w=800" alt="Team brainstorming" className="w-full h-full object-cover grayscale opacity-80 mix-blend-multiply" />
                   </div>
@@ -211,7 +211,7 @@ export default function TimelineSection() {
                 <div className="w-4 h-4 bg-[#101014] border-2 border-[#7A2EFF] rounded-full z-10 shadow-[0_0_15px_rgba(122,46,255,0.6)]"></div>
               </div>
               <div className="w-full lg:w-[45%] pl-0 lg:pl-16 order-2 lg:order-3 mt-6 lg:mt-0 flex justify-start">
-                <div className="parallax-sticky bg-[#7A2EFF] text-white p-6 shadow-xl transform rotate-4 relative w-[260px] group hover:rotate-0 transition-transform duration-300">
+                <div className="parallax-sticky bg-[#7A2EFF] text-white p-6 shadow-xl transform rotate-4 relative w-full max-w-[260px] group hover:rotate-0 transition-transform duration-300">
                   <div className="w-full h-[150px] bg-white/20 flex items-center justify-center mb-4 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Office photograph" className="w-full h-full object-cover mix-blend-overlay opacity-80" />
                   </div>
@@ -223,7 +223,7 @@ export default function TimelineSection() {
             {/* MILESTONE 2019 - Left (World Map) */}
             <div className="milestone-node flex flex-col lg:flex-row items-center w-full min-h-[300px] lg:mt-[-50px]">
               <div className="w-full lg:w-[45%] flex justify-end pr-0 lg:pr-16 order-2 lg:order-1 mt-6 lg:mt-0">
-                <div className="parallax-photo bg-white p-4 shadow-xl transform -rotate-1 relative w-[340px]">
+                <div className="parallax-photo bg-white p-4 shadow-xl transform -rotate-1 relative w-full max-w-[340px]">
                   <div className="w-full h-[160px] bg-gray-200 flex items-center justify-center overflow-hidden relative border border-gray-300">
                      <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="World map" className="w-full h-full object-cover opacity-90 mix-blend-multiply" />
                      {/* Purple Pins */}
@@ -257,7 +257,7 @@ export default function TimelineSection() {
                 <div className="w-4 h-4 bg-[#101014] border-2 border-[#7A2EFF] rounded-full z-10 shadow-[0_0_15px_rgba(122,46,255,0.6)]"></div>
               </div>
               <div className="w-full lg:w-[45%] pl-0 lg:pl-16 order-2 lg:order-3 mt-6 lg:mt-0 flex justify-start">
-                <div className="parallax-photo bg-gradient-to-br from-gray-800 to-black p-3 pb-8 shadow-2xl transform rotate-2 relative w-[280px]">
+                <div className="parallax-photo bg-gradient-to-br from-gray-800 to-black p-3 pb-8 shadow-2xl transform rotate-2 relative w-full max-w-[280px]">
                   <div className="w-full h-[180px] bg-gray-900 border border-gray-700 flex items-center justify-center overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Laptop showing dashboards" className="w-full h-full object-cover opacity-70" />
                   </div>
@@ -269,7 +269,7 @@ export default function TimelineSection() {
             {/* MILESTONE 2024 - Left (Moodboard) */}
             <div className="milestone-node flex flex-col lg:flex-row items-center w-full min-h-[300px] lg:mt-[-50px]">
               <div className="w-full lg:w-[45%] flex justify-end pr-0 lg:pr-16 order-2 lg:order-1 mt-6 lg:mt-0">
-                <div className="parallax-sticky bg-[#F8F6F2] p-4 shadow-xl transform -rotate-3 relative w-[300px] border border-gray-300 torn-edge-black">
+                <div className="parallax-sticky bg-[#F8F6F2] p-4 shadow-xl transform -rotate-3 relative w-full max-w-[300px] border border-gray-300 torn-edge-black">
                   <div className="w-full h-[200px] bg-gray-200 grid grid-cols-2 grid-rows-2 gap-1 p-1">
                      <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover" alt="Moodboard 1" />
                      <div className="bg-[#7A2EFF]/80 flex items-center justify-center p-2"><span className="text-white font-handwritten text-xl rotate-12">Ideas!</span></div>

@@ -11,31 +11,31 @@ export default function AboutHero() {
       const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
       const tl = gsap.timeline();
 
-      // Entrance Sequence
-      tl.fromTo('.hero-eyebrow', 
-        { autoAlpha: 0, x: -20 },
-        { autoAlpha: 1, x: 0, duration: 0.6, ease: 'power2.out', delay: 0.2 }
-      )
-      .fromTo('.hero-heading .line', 
-        { y: 50, autoAlpha: 0 },
-        { y: 0, autoAlpha: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out' },
-        "-=0.4"
-      )
-      .fromTo('.hero-slogan',
-        { scaleX: 0, autoAlpha: 0, transformOrigin: 'left' },
-        { scaleX: 1, autoAlpha: 1, duration: 0.6, ease: 'power2.out' },
-        "-=0.4"
-      )
-      .fromTo('.hero-slogan-text',
-        { autoAlpha: 0 },
-        { autoAlpha: 1, duration: 0.4 },
-        "-=0.2"
-      )
-      .fromTo(['.hero-body', '.hero-cta'],
-        { y: 30, autoAlpha: 0 },
-        { y: 0, autoAlpha: 1, duration: 0.6, stagger: 0.15, ease: 'power2.out' },
-        "-=0.3"
-      );
+      // Entrance Sequence removed for instant display
+      // tl.fromTo('.hero-eyebrow', 
+      //   { autoAlpha: 0, x: -20 },
+      //   { autoAlpha: 1, x: 0, duration: 0.6, ease: 'power2.out', delay: 0.2 }
+      // )
+      // .fromTo('.hero-heading .line', 
+      //   { y: 50, autoAlpha: 0 },
+      //   { y: 0, autoAlpha: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out' },
+      //   "-=0.4"
+      // )
+      // .fromTo('.hero-slogan',
+      //   { scaleX: 0, autoAlpha: 0, transformOrigin: 'left' },
+      //   { scaleX: 1, autoAlpha: 1, duration: 0.6, ease: 'power2.out' },
+      //   "-=0.4"
+      // )
+      // .fromTo('.hero-slogan-text',
+      //   { autoAlpha: 0 },
+      //   { autoAlpha: 1, duration: 0.4 },
+      //   "-=0.2"
+      // )
+      // .fromTo(['.hero-body', '.hero-cta'],
+      //   { y: 30, autoAlpha: 0 },
+      //   { y: 0, autoAlpha: 1, duration: 0.6, stagger: 0.15, ease: 'power2.out' },
+      //   "-=0.3"
+      // );
 
     }, containerRef);
 
@@ -53,30 +53,30 @@ export default function AboutHero() {
         
         <div className="max-w-[560px]">
           {/* Eyebrow */}
-          <div className="hero-eyebrow inline-block mb-6 relative invisible">
+          <div className="hero-eyebrow inline-block mb-6 relative">
             <span className="font-handwritten text-[#7A2EFF] text-2xl lg:text-3xl tracking-wider uppercase inline-block border-b-2 border-[#7A2EFF] pb-1">ABOUT US</span>
           </div>
 
           {/* Heading */}
           <h1 className="hero-heading font-display text-[5rem] lg:text-[7.5rem] leading-[0.95] mb-6 flex flex-col">
-            <span className="line text-black block invisible">WE ARE</span>
-            <span className="line text-[#7A2EFF] block invisible">PURPLE COWS</span>
+            <span className="line text-black block">WE ARE</span>
+            <span className="line text-[#7A2EFF] block">PURPLE COWS</span>
           </h1>
 
           {/* Slogan Strip */}
-          <div className="hero-slogan bg-[#101014] text-white inline-block px-6 py-2 mb-8 transform -rotate-2 relative invisible shadow-lg" style={{ clipPath: 'polygon(2% 8%, 98% 0%, 99% 92%, 0% 100%)' }}>
-            <p className="hero-slogan-text font-handwritten text-2xl lg:text-3xl m-0 invisible mt-1">
+          <div className="hero-slogan bg-[#101014] text-white inline-block px-6 py-2 mb-8 transform -rotate-2 relative shadow-lg" style={{ clipPath: 'polygon(2% 8%, 98% 0%, 99% 92%, 0% 100%)' }}>
+            <p className="hero-slogan-text font-handwritten text-2xl lg:text-3xl m-0 mt-1">
               We don't follow the herd. <span className="text-[#7A2EFF]">We lead it.</span>
             </p>
           </div>
 
           {/* Body Copy */}
-          <p className="hero-body font-body text-lg lg:text-xl text-[#333] mb-10 leading-relaxed font-medium invisible">
+          <p className="hero-body font-body text-lg lg:text-xl text-[#333] mb-10 leading-relaxed font-medium">
             We are a full-service creative marketing agency built for brands that want more than just noise. We create ideas, craft experiences and build <span className="brush-underline text-black font-semibold">growth that lasts.</span>
           </p>
 
           {/* CTA */}
-          <div className="hero-cta invisible">
+          <div className="hero-cta">
             <a href="#contact" className="magnetic-btn group inline-flex items-center gap-4 bg-[#7A2EFF] text-white px-8 py-4 rounded-full font-display text-xl tracking-wider uppercase hover:bg-[#5B18D1] transition-colors focus:outline-none focus:ring-4 focus:ring-[#7A2EFF]/50">
               LET'S CREATE IMPACT
               <span className="bg-[#101014] text-white rounded-full p-1.5 flex items-center justify-center arrow-icon transition-transform duration-300">

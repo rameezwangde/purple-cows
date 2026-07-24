@@ -110,10 +110,10 @@ export default function InnerCodeSection() {
         </div>
 
         {/* Right Side (65%) - Constellation */}
-        <div className="w-full lg:w-[65%] h-[1000px] lg:min-h-[1000px] relative mt-16 lg:mt-0">
+        <div className="w-full lg:w-[65%] h-auto lg:h-[1000px] relative mt-16 lg:mt-0 flex flex-col lg:block items-center">
           
           {/* Connecting SVG Lines */}
-          <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" style={{ overflow: 'visible' }}>
+          <svg className="hidden lg:block absolute inset-0 w-full h-full pointer-events-none z-0" style={{ overflow: 'visible' }}>
             <path className="constellation-line" d="M100 100 Q 300 150 500 50" fill="none" stroke="#7B2EFF" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.4"/>
             <path className="constellation-line" d="M500 50 T 800 250" fill="none" stroke="#7B2EFF" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.4"/>
             <path className="constellation-line" d="M800 250 Q 600 450 850 650" fill="none" stroke="#7B2EFF" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.4"/>
@@ -126,42 +126,44 @@ export default function InnerCodeSection() {
           </svg>
 
           {/* Principle Nodes */}
-          {principles.map((p, index) => (
-            <div 
-              key={p.id} 
-              className={`principle-node absolute group cursor-pointer w-[180px] lg:w-[220px] z-20 hover:z-50 will-change-transform transform-gpu ${index % 2 === 0 ? 'float-slow' : 'float-fast'}`}
-              style={{ left: p.x, top: p.y }}
-            >
-              <div className="relative">
-                {/* Glow Halo */}
-                <div className="absolute inset-0 bg-[#7B2EFF] rounded-full blur-[30px] opacity-0 group-hover:opacity-40 transition-opacity duration-500 scale-150"></div>
-                
-                {/* Node Shape */}
-                <div className="relative bg-white border-2 border-black p-4 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm shadow-[8px_8px_0px_#111] group-hover:shadow-[12px_12px_0px_#7B2EFF] group-hover:-translate-y-2 transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-[#7B2EFF]/10 flex items-center justify-center mb-3 text-[#7B2EFF] group-hover:bg-[#7B2EFF] group-hover:text-white transition-colors duration-300">
-                     {/* Simplified Icon based on index */}
-                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                       {index === 0 && <g><circle cx="12" cy="12" r="10"/></g>}
-                       {index === 1 && <g><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></g>}
-                       {index === 2 && <g><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></g>}
-                       {index === 3 && <g><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></g>}
-                       {index === 4 && <g><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></g>}
-                       {index === 5 && <g><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></g>}
-                       {index === 6 && <g><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></g>}
-                       {index === 7 && <g><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></g>}
-                     </svg>
-                  </div>
-                  <h3 className="font-display text-xl leading-tight mb-2 uppercase">{p.title}</h3>
-                  <div className="h-0 overflow-hidden opacity-0 group-hover:h-auto group-hover:opacity-100 group-hover:mt-2 transition-all duration-300">
-                    <p className="font-body text-sm text-gray-600 leading-snug">{p.desc}</p>
+          <div className="w-full flex flex-col gap-6 lg:block relative z-20">
+            {principles.map((p, index) => (
+              <div 
+                key={p.id} 
+                className={`principle-node relative lg:absolute group cursor-pointer w-full max-w-[320px] lg:max-w-none lg:w-[220px] z-20 hover:z-50 will-change-transform transform-gpu ${index % 2 === 0 ? 'float-slow' : 'float-fast'} !left-auto lg:!left-[${p.x}] !top-auto lg:!top-[${p.y}] mx-auto lg:mx-0`}
+                style={{ '--lg-left': p.x, '--lg-top': p.y }}
+              >
+                <div className="relative">
+                  {/* Glow Halo */}
+                  <div className="absolute inset-0 bg-[#7B2EFF] rounded-full blur-[30px] opacity-0 group-hover:opacity-40 transition-opacity duration-500 scale-150"></div>
+                  
+                  {/* Node Shape */}
+                  <div className="relative bg-white border-2 border-black p-4 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm shadow-[8px_8px_0px_#111] group-hover:shadow-[12px_12px_0px_#7B2EFF] group-hover:-translate-y-2 transition-all duration-300">
+                    <div className="w-10 h-10 rounded-full bg-[#7B2EFF]/10 flex items-center justify-center mb-3 text-[#7B2EFF] group-hover:bg-[#7B2EFF] group-hover:text-white transition-colors duration-300">
+                       {/* Simplified Icon based on index */}
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                         {index === 0 && <g><circle cx="12" cy="12" r="10"/></g>}
+                         {index === 1 && <g><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></g>}
+                         {index === 2 && <g><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></g>}
+                         {index === 3 && <g><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></g>}
+                         {index === 4 && <g><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></g>}
+                         {index === 5 && <g><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></g>}
+                         {index === 6 && <g><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></g>}
+                         {index === 7 && <g><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></g>}
+                       </svg>
+                    </div>
+                    <h3 className="font-display text-xl leading-tight mb-2 uppercase">{p.title}</h3>
+                    <div className="h-0 overflow-hidden opacity-0 group-hover:h-auto group-hover:opacity-100 group-hover:mt-2 transition-all duration-300">
+                      <p className="font-body text-sm text-gray-600 leading-snug">{p.desc}</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
 
           {/* Interactive Centerpiece (Mascot Placeholder) */}
-          <div className="centerpiece absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[350px] lg:w-[450px] h-[350px] lg:h-[450px] z-10 pointer-events-none">
+          <div className="centerpiece relative lg:absolute mt-12 lg:mt-0 top-auto lg:top-1/2 left-auto lg:left-1/2 transform-none lg:-translate-x-1/2 lg:-translate-y-1/2 w-[300px] lg:w-[450px] h-[300px] lg:h-[450px] z-10 pointer-events-none order-first lg:order-none">
             {/* Paint Splash Base */}
             <div className="absolute inset-0 bg-[#7B2EFF] opacity-10 filter blur-[40px] rounded-full scale-125"></div>
             <img src="https://images.unsplash.com/photo-1558486012-817176f84c6d?auto=format&fit=crop&q=80&w=800" alt="Purple Paint Splash" className="absolute inset-0 w-full h-full object-contain mix-blend-multiply opacity-50" style={{ clipPath: 'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)' }}/>
@@ -172,9 +174,9 @@ export default function InnerCodeSection() {
             </div>
 
             {/* Floating Assets around Mascot */}
-            <div className="absolute top-0 right-10 w-12 h-12 bg-black text-white flex items-center justify-center font-display text-sm rounded-lg rotate-12 float-fast shadow-lg">IDEAS</div>
-            <div className="absolute bottom-10 left-4 w-16 h-16 bg-[#F8F6F3] border-2 border-black flex items-center justify-center font-display text-2xl rounded-full -rotate-12 float-slow shadow-lg">☕</div>
-            <div className="absolute top-1/4 -left-6 w-10 h-10 bg-yellow-400 rounded-sm rotate-6 float-fast shadow-md"></div>
+            <div className="absolute top-0 right-4 lg:right-10 w-12 h-12 bg-black text-white flex items-center justify-center font-display text-sm rounded-lg rotate-12 float-fast shadow-lg">IDEAS</div>
+            <div className="absolute bottom-10 left-0 lg:left-4 w-16 h-16 bg-[#F8F6F3] border-2 border-black flex items-center justify-center font-display text-2xl rounded-full -rotate-12 float-slow shadow-lg">☕</div>
+            <div className="absolute top-1/4 -left-2 lg:-left-6 w-10 h-10 bg-yellow-400 rounded-sm rotate-6 float-fast shadow-md"></div>
           </div>
 
         </div>

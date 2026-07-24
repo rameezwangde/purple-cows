@@ -134,10 +134,10 @@ button { font: inherit; }
   .brush-underline { max-width: 680px; }
   .hero-copy { max-width: 650px; font-size: 16px; }
   .hero-right { position: relative; inset: auto; height: 610px; margin-top: -45px; }
-  .cow-art { width: 125%; max-width: none; right: -18%; object-position: right bottom; }
+  .cow-art { width: 100%; max-width: none; right: 0; object-position: bottom center; }
   .flight-path { left: 7%; }
   .paper-plane { left: 11%; }
-  .chart { display: none; }
+  .chart { left: 2%; top: 5%; transform: scale(0.75); }
   .target { left: 8%; top: 44%; }
   .strategy { right: 4%; top: 20%; }
   .steam { left: 33%; top: 49%; }
@@ -159,13 +159,13 @@ button { font: inherit; }
   .hero-actions { width: 100%; margin-top: 22px; }
   .hero-actions .brush-button { width: 100%; min-width: 0; font-size: 13px; padding-left: 20px; }
   .hero-right { height: 430px; margin-top: -5px; }
-  .cow-art { width: 150%; right: -39%; }
+  .cow-art { width: 100%; right: 0; }
   .paper-plane { width: 66px; top: 3%; left: 4%; }
   .flight-path { width: 55%; left: -3%; top: -2%; }
   .target { width: 70px; height: 70px; left: 4%; top: 38%; }
   .target span { border-width: 4px; }
-  .strategy { display: none; }
-  .spark { display: none; }
+  .strategy { right: 2%; top: 15%; transform: scale(0.7); }
+  .spark { right: 5%; top: 30%; font-size: 20px; }
   .steam { width: 36px; left: 22%; top: 44%; }
   .desk-note { right: 2%; bottom: 1%; padding: 8px 14px; font-size: 19px; }
   .stats-inner { width: calc(100% - 24px); }

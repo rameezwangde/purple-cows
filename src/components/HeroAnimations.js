@@ -8,15 +8,16 @@ export function initHeroAnimations(root) {
   const q = gsap.utils.selector(root)
   const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } })
 
-  timeline
-    .from('.site-header', { y: -40, opacity: 0, duration: .7 })
-    .from(q('.eyebrow'), { x: -22, opacity: 0, duration: .55 }, '-=.25')
-    .from(q('.headline-line > span'), { yPercent: 110, duration: .78, stagger: .1 }, '-=.28')
-    .from(q('.brush-underline path'), { strokeDashoffset: 900, duration: .85 }, '-=.4')
-    .from(q('.hero-copy'), { y: 18, opacity: 0, duration: .52 }, '-=.55')
-    .from(q('.hero-actions'), { y: 24, opacity: 0, duration: .55 }, '-=.35')
-    .from(q('.cow-art'), { scale: .95, opacity: 0, duration: .9, transformOrigin: '70% 80%' }, '-=.75')
-    .from(q('.float-item, .spark'), { scale: .82, opacity: 0, stagger: .08, duration: .5 }, '-=.45')
+  // Initial load animations removed for instant display
+  // timeline
+  //   .from('.site-header', { y: -40, opacity: 0, duration: .7 })
+  //   .from(q('.eyebrow'), { x: -22, opacity: 0, duration: .55 }, '-=.25')
+  //   .from(q('.headline-line > span'), { yPercent: 110, duration: .78, stagger: .1 }, '-=.28')
+  //   .from(q('.brush-underline path'), { strokeDashoffset: 900, duration: .85 }, '-=.4')
+  //   .from(q('.hero-copy'), { y: 18, opacity: 0, duration: .52 }, '-=.55')
+  //   .from(q('.hero-actions'), { y: 24, opacity: 0, duration: .55 }, '-=.35')
+  //   .from(q('.cow-art'), { scale: .95, opacity: 0, duration: .9, transformOrigin: '70% 80%' }, '-=.75')
+  //   .from(q('.float-item, .spark'), { scale: .82, opacity: 0, stagger: .08, duration: .5 }, '-=.45')
 
   q('.float-item').forEach((el, index) => {
     gsap.to(el, { y: index % 2 ? 9 : -11, rotation: index % 2 ? 2.5 : -2, duration: 2.8 + index * .45, ease: 'sine.inOut', repeat: -1, yoyo: true })

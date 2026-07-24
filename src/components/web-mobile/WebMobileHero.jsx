@@ -16,30 +16,31 @@ export default function WebMobileHero() {
     if (reduced) return;
 
     let ctx = gsap.context(() => {
+      // Initial animations removed for instant display
       // 1. Heading SplitText animation
-      gsap.fromTo('.split-char', {
-        y: 40,
-        opacity: 0,
-        rotationX: -45,
-      }, {
-        y: 0,
-        opacity: 1,
-        rotationX: 0,
-        stagger: 0.02,
-        duration: 0.8,
-        ease: 'back.out(1.5)',
-        delay: 0.1
-      });
+      // gsap.fromTo('.split-char', {
+      //   y: 40,
+      //   opacity: 0,
+      //   rotationX: -45,
+      // }, {
+      //   y: 0,
+      //   opacity: 1,
+      //   rotationX: 0,
+      //   stagger: 0.02,
+      //   duration: 0.8,
+      //   ease: 'back.out(1.5)',
+      //   delay: 0.1
+      // });
 
       // 2. Feature columns stagger
-      gsap.from('.wm-feature', {
-        y: 30,
-        opacity: 0,
-        stagger: 0.1,
-        duration: 0.6,
-        ease: 'power2.out',
-        delay: 0.5
-      });
+      // gsap.from('.wm-feature', {
+      //   y: 30,
+      //   opacity: 0,
+      //   stagger: 0.1,
+      //   duration: 0.6,
+      //   ease: 'power2.out',
+      //   delay: 0.5
+      // });
 
       // 3. Floating loops (removed because elements are baked into image now)
     }, containerRef);

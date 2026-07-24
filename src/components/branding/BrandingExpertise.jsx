@@ -24,21 +24,21 @@ export default function BrandingExpertise() {
         }
       });
 
-      // Header Animation
-      tl.from('.be-label', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' })
-        .from('.be-headline-1', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
-        .from('.be-headline-2-wrap', { y: 20, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.6')
-        .from('.be-headline-underline path', { strokeDashoffset: 1000, duration: 1, ease: 'power2.out' }, '-=0.4')
-        .from('.be-desc', { y: 20, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.8');
+      // Header Animation removed for instant display
+      // tl.from('.be-label', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' })
+      //   .from('.be-headline-1', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
+      //   .from('.be-headline-2-wrap', { y: 20, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.6')
+      //   .from('.be-headline-underline path', { strokeDashoffset: 1000, duration: 1, ease: 'power2.out' }, '-=0.4')
+      //   .from('.be-desc', { y: 20, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.8');
 
-      // Columns Animation
-      tl.from('.be-col', {
-        y: 60,
-        opacity: 0,
-        stagger: 0.2,
-        duration: 0.8,
-        ease: 'power3.out'
-      }, '-=0.4');
+      // Columns Animation removed
+      // tl.from('.be-col', {
+      //   y: 60,
+      //   opacity: 0,
+      //   stagger: 0.2,
+      //   duration: 0.8,
+      //   ease: 'power3.out'
+      // }, '-=0.4');
 
       // Footer Animation
       gsap.from('.be-footer-text', {
