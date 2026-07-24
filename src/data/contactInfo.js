@@ -1,11 +1,12 @@
 // Replace placeholder contact details with verified client information before launch.
 export const contactInfo = {
-  studioName: 'Purple Cow Studio',
-  addressLines: ['Creative Bay, Building 7','Al Quoz Industrial Area 3','Dubai, UAE'],
-  phone: '+971 50 123 4567',
-  email: 'hello@purplecow.agency',
-  workingHours: ['Monday–Friday','9:00 AM–6:00 PM','GMT +4'],
+  studioName: 'We Are Purple Cow',
+  addressLines: ['B-59, Noida Sec - 8', '1st Floor', 'Uttar Pradesh - 201306'],
+  phone: '+91 78400 70004',
+  email: 'contactus@wearepurplecow.com',
+  workingHours: ['Monday–Friday','9:00 AM–6:00 PM','IST'],
   responseTime: 'Within 24 business hours',
-  mapUrl: '#location'
+  mapUrl: 'https://www.google.com/maps/search/?api=1&query=B-59,+Sector+8,+Noida,+Uttar+Pradesh+201306',
+  embedUrl: 'https://maps.google.com/maps?width=100%25&height=600&hl=en&q=B-59,%20Sector%208,%20Noida+(We%20Are%20Purple%20Cow)&t=&z=16&ie=UTF8&iwloc=B&output=embed'
 }
 export const serviceOptions = ['Brand Strategy','Branding & Identity','Website Design & Development','Digital Marketing','Social Media Management','Content Marketing','Campaign Support','Something Else']

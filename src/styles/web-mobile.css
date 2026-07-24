@@ -1,0 +1,309 @@
+.wm-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 140px max(40px, 4vw) 100px;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  background-color: #F8F7F4;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* LEFT COLUMN - ILLUSTRATION COMPOSITE */
+.wm-hero-left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wm-visual-composite {
+  position: relative;
+  width: 110%; /* Slight overlap as requested */
+  max-width: 800px;
+  left: -5%;
+}
+
+.wm-raw-composite {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Since we don't have transparent assets yet, we use mix-blend-mode to blend the white background of the composite into the off-white page */
+  mix-blend-mode: darken;
+}
+
+.wm-plane {
+  position: absolute;
+  top: -5%;
+  right: 15%;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+}
+
+.wm-sticky {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background: white;
+  padding: 24px 32px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  transform: rotate(-4deg);
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  line-height: 1.4;
+  z-index: 10;
+  /* Torn edge simulation */
+  clip-path: polygon(0 0, 100% 2%, 98% 100%, 2% 98%);
+}
+
+.wm-tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(2deg);
+  width: 60px;
+  height: 24px;
+  background: #7a2eff;
+  opacity: 0.9;
+}
+
+.wm-sticky ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wm-sticky li {
+  margin-bottom: 4px;
+}
+
+.text-purple {
+  color: #7a2eff;
+}
+
+/* RIGHT COLUMN - TYPOGRAPHY & FEATURES */
+.wm-hero-right {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wm-brand-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.wm-logo-mark {
+  font-family: 'Anton', sans-serif;
+  font-size: 48px;
+  letter-spacing: -0.02em;
+  color: #111111;
+  line-height: 1;
+}
+
+.wm-subhead-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.wm-subhead {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: #111111;
+  white-space: nowrap;
+}
+
+.wm-subhead-line {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(17,17,17,0.15);
+}
+
+.wm-heading {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(48px, 6vw, 96px);
+  line-height: 0.95;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0 0 60px 0;
+  letter-spacing: -0.01em;
+}
+
+.wm-sparkle-icon {
+  display: inline-block;
+  font-size: 0.6em;
+  color: #111111;
+  vertical-align: super;
+  margin-left: 10px;
+}
+
+.wm-brush-font {
+  font-family: 'Caveat', cursive;
+  text-transform: none;
+  font-size: 1.1em;
+  letter-spacing: 0;
+}
+
+.wm-underline-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.wm-underline-wrap::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 12px;
+  background: #7a2eff;
+  z-index: -1;
+  transform: rotate(-1deg);
+}
+
+.wm-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+}
+
+/* Add thin vertical separators between columns */
+.wm-feature:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background-color: rgba(17,17,17,0.1);
+}
+
+.wm-feature {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.wm-feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  margin-bottom: 24px;
+}
+
+.wm-feature h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  margin: 0 0 16px 0;
+  color: #111111;
+  letter-spacing: 0.02em;
+}
+
+.wm-feature h3 span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #7a2eff;
+  display: block;
+  margin-top: 4px;
+}
+
+.wm-feature h3 span b {
+  font-weight: 800;
+}
+
+.wm-feature p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+/* TORN PAPER TRANSITION */
+.wm-torn-transition {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Complex clip path to simulate torn paper edge at the top */
+  clip-path: polygon(
+    0% 20%, 2% 15%, 4% 22%, 6% 18%, 8% 25%, 10% 15%, 12% 22%, 14% 18%, 16% 24%, 18% 16%, 
+    20% 25%, 22% 18%, 24% 22%, 26% 15%, 28% 24%, 30% 16%, 32% 21%, 34% 17%, 36% 25%, 38% 19%, 
+    40% 22%, 42% 16%, 44% 24%, 46% 18%, 48% 22%, 50% 15%, 52% 24%, 54% 17%, 56% 23%, 58% 16%, 
+    60% 25%, 62% 18%, 64% 22%, 66% 15%, 68% 24%, 70% 16%, 72% 21%, 74% 17%, 76% 25%, 78% 19%, 
+    80% 22%, 82% 16%, 84% 24%, 86% 18%, 88% 22%, 90% 15%, 92% 24%, 94% 17%, 96% 23%, 98% 16%, 
+    100% 20%, 100% 100%, 0% 100%
+  );
+}
+
+.wm-torn-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px; /* push down slightly due to clip path */
+}
+
+.wm-torn-text .wm-brush-font {
+  font-size: 1.4em;
+}
+
+.wm-torn-arrow {
+  width: 20px;
+  height: 20px;
+  color: #7a2eff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .wm-hero {
+    grid-template-columns: 1fr;
+    padding: 120px 5% 100px;
+    gap: 60px;
+  }
+  .wm-visual-composite {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .wm-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+  .wm-feature:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .wm-features-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -5,6 +5,7 @@ import About from './pages/About'
 import StrategyPlanning from './pages/StrategyPlanning'
 import BrandingPackaging from './pages/BrandingPackaging'
 import Contact from './pages/Contact'
+import WebAndMobile from './pages/WebAndMobile'
 import './styles/hero-live.css'
 import './styles/services-orbit.css'
 import './styles/impact-workspace.css'
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/about" element={<About/>}/>
         <Route path="/solutions/strategy-and-planning" element={<StrategyPlanning/>}/>
         <Route path="/solutions/branding-and-packaging" element={<BrandingPackaging/>}/>
+        <Route path="/solutions/web-and-mobile" element={<WebAndMobile/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<Home/>}/>
       </Routes>

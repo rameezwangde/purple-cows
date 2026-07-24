@@ -33,45 +33,39 @@ export default function StrategyHero() {
       
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-      // 1. Fade in the whole section slightly
-      tl.fromTo(containerRef.current, { autoAlpha: 0 }, { autoAlpha: 1, duration: 1 })
+      // Start text animation IMMEDIATELY at absolute time zero
+      tl.fromTo('.split-char', 
+        { y: 30, autoAlpha: 0, rotationX: -45 }, 
+        { y: 0, autoAlpha: 1, rotationX: 0, stagger: 0.02, duration: 0.6, ease: 'back.out(1.5)' },
+        0
+      )
       
-      // 2. Cow mascot slides up with slight rotation
       .fromTo(cowRef.current, 
-        { y: 100, rotation: 5, autoAlpha: 0 }, 
-        { y: 0, rotation: 0, autoAlpha: 1, duration: 1.2 }, 
-        "-=0.5"
+        { y: 50, rotation: 5, autoAlpha: 0 }, 
+        { y: 0, rotation: 0, autoAlpha: 1, duration: 0.8 }, 
+        0
       )
       
-      // 3. Paint splash expands organically
       .fromTo(bgPaintRef.current,
-        { scale: 0.8, autoAlpha: 0, rotation: -5 },
-        { scale: 1, autoAlpha: 1, rotation: 0, duration: 1.5, ease: 'back.out(1.2)' },
-        "-=1"
+        { scale: 0.9, autoAlpha: 0, rotation: -2 },
+        { scale: 1, autoAlpha: 1, rotation: 0, duration: 1, ease: 'back.out(1.2)' },
+        0
       )
 
-      // 4. Headline letters stagger in
-      .fromTo('.split-char', 
-        { y: 50, autoAlpha: 0, rotationX: -45 }, 
-        { y: 0, autoAlpha: 1, rotationX: 0, stagger: 0.04, duration: 0.8, ease: 'back.out(1.5)' },
-        "-=0.8"
-      )
-
-      // 5. Paper airplane flies across screen
       .fromTo(planeRef.current,
-        { autoAlpha: 0, scale: 0.5 },
+        { autoAlpha: 0, scale: 0.8 },
         { 
           autoAlpha: 1, 
           scale: 1, 
-          duration: 3, 
-          ease: 'sine.inOut',
+          duration: 2, 
+          ease: 'power2.out',
           motionPath: {
             path: [{x: 0, y: 0}, {x: -200, y: -100}, {x: -400, y: 50}, {x: -600, y: -50}],
             curviness: 1.5,
             autoRotate: true
           }
         },
-        "-=0.5"
+        0.2
       );
 
       loopsRef.current = [

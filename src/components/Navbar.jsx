@@ -2,7 +2,7 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import BrushButton from './BrushButton'
-import logo from '../assets/logo/purple-cow-logo-new.jpg'
+import logo from '../assets/logo/purple-cow-logo-transparent.png'
 
 const links = [
   { label: 'Home', to: '/' },
@@ -21,8 +21,8 @@ const links = [
     to: '#', 
     dropdown: [
       { label: 'Strategy & Planning', to: '/solutions/strategy-and-planning' },
-      { label: 'Branding and Packaging', to: '/solutions/branding-and-packaging' },
-      { label: 'Web and Mobile', to: '#' },
+      { label: 'Branding & Packaging', to: '/solutions/branding-and-packaging' },
+      { label: 'Web & Mobile', to: '/solutions/web-and-mobile' },
       { label: 'Social Media Management', to: '#' },
       { label: 'Performance Marketing and SEO', to: '#' },
       { label: 'Offline Creative', to: '#' },
@@ -54,10 +54,10 @@ export default function Navbar() {
             {links.map((link) => (
               link.dropdown ? (
                 <div key={link.label} className="relative group flex items-center">
-                  <span className="cursor-pointer flex items-center gap-1 font-[800] text-[12px] uppercase tracking-[.05em] py-[14px]">
+                  <a className="cursor-pointer flex items-center gap-1 font-[800] text-[12px] uppercase tracking-[.05em] py-[14px]">
                     {link.label}
                     <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
-                  </span>
+                  </a>
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[320px] bg-[#111111] border border-gray-800 shadow-[0_20px_40px_rgba(122,46,255,0.15)] rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50 flex flex-col overflow-hidden before:content-[''] before:absolute before:-top-4 before:left-0 before:w-full before:h-4">
                     {link.dropdown.map((dropLink, idx) => (
                       <Link 
