@@ -69,7 +69,7 @@ export default function AboutCollage() {
       </div>
 
       {/* Strategy Sheet */}
-      <div className="collage-item absolute top-[40%] lg:top-[35%] right-[2%] lg:right-[5%] w-[300px] lg:w-[400px] bg-[#F8F6F2] p-8 shadow-2xl transform rotate-2 z-10 invisible">
+      <div className="collage-item hidden lg:block absolute top-[40%] lg:top-[35%] right-[2%] lg:right-[5%] w-[300px] lg:w-[400px] bg-[#F8F6F2] p-8 shadow-2xl transform rotate-2 z-10 invisible">
         <div className="relative w-full aspect-video flex items-center justify-center">
            <div className="absolute w-20 h-20 rounded-full border-2 border-black flex items-center justify-center font-handwritten text-2xl z-20 bg-[#F8F6F2]">
              IDEA

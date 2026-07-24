@@ -97,14 +97,17 @@
   border-radius: 2px;
 }
 
-.brush-underline {
+span.brush-underline {
   position: relative;
   display: inline-block;
+  height: auto;
+  width: auto;
+  margin: 0;
 }
-.brush-underline::after {
+span.brush-underline::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 90%;
   left: 0;
   width: 100%;
   height: 4px;
