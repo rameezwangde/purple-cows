@@ -86,7 +86,7 @@ export default function PerformanceHero() {
         </div>
 
         <div className="pm-subtitle">
-          <span>PERFORMANCE MARKETING & SEO SOLUTIONS</span>
+          <span>PERFORMANCE MARKETING, GOOGLE ADS & SEO SERVICES</span>
           <div className="pm-subtitle-line"></div>
         </div>
 

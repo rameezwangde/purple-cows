@@ -144,7 +144,7 @@ export default function CreativeHero() {
           <div className="cr-feature-col">
             <Lightbulb className="cr-feature-icon" size={26} strokeWidth={1.5}/>
             <h4 className="cr-feature-title">SMART STRATEGY</h4>
-            <p className="cr-feature-desc">We uncover insights that shape campaigns people actually remember.</p>
+            <p className="cr-feature-desc">We uncover insights and craft <b>brand strategy</b> that shape campaigns people actually remember.</p>
           </div>
           <div className="cr-feature-col">
             <Clapperboard className="cr-feature-icon" size={26} strokeWidth={1.5}/>

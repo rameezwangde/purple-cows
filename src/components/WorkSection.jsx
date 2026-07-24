@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Kalamanch.co.in',
     industry: 'Events & Entertainment',
-    description: 'A creative events platform showcasing services, portfolio and seamless user experience with strong strong brand presence.',
+    description: 'A custom web design and events platform showcasing services with a seamless UI/UX design and strong brand presence.',
     url: 'https://kalamanch.co.in',
     image: '/work/kalamanch.png',
     iconPath: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'Pasta Hut',
     industry: 'Restaurant',
-    description: 'Restaurant page with engaging design, menu showcase, customer engagement and easy discovery.',
+    description: 'Custom restaurant website design with engaging UI, menu showcase, and local SEO optimization for easy discovery.',
     url: 'https://magicpin.in/New-Delhi/Sector-9/Restaurant/Pasta-Hut/store/2c6c08',
     image: '/work/pastahut.png',
     iconPath: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
@@ -119,7 +119,7 @@ export default function WorkSection() {
           </div>
           
           <div className="ws-intro-right">
-            <p>We partner with ambitious businesses and transform ideas into powerful digital experiences that drive real results. Here are some of the brands we've worked with.</p>
+            <p>We partner with ambitious businesses to deliver powerful <b>web design</b>, <b>UI/UX</b>, and <b>digital marketing services</b> that drive real results. Here are some of the brands we've built and grown.</p>
             <div className="ws-floating-doodles">
               <span className="ws-doodle-sparkle">✨</span>
               <svg className="ws-doodle-lines" width="40" height="40" viewBox="0 0 40 40">

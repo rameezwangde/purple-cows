@@ -57,7 +57,7 @@ export default function MissionSection() {
               We turn brave thinking into <span className="text-[#7A2EFF]">meaningful growth.</span>
             </h2>
             <p className="mission-body invisible font-body text-[#555] text-xl leading-relaxed max-w-xl">
-              Our role is not simply to make brands look better. We help them think clearly, communicate confidently and grow through ideas that connect creativity with purpose.
+              Our role is not simply to make brands look better. By offering <b>expert digital marketing</b>, <b>SEO</b>, and <b>web design services</b>, we help them communicate confidently and grow through ideas that connect creativity with purpose.
             </p>
           </div>
 

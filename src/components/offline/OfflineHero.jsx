@@ -91,7 +91,7 @@ export default function OfflineHero() {
         </h1>
 
         <p className="off-supporting-text">
-          We craft tangible brand experiences that get <span className="purple-bold">noticed</span>, <span className="purple-bold">remembered</span> and <span className="purple-bold">talked</span> about.
+          From <b>print design</b> to <b>OOH advertising</b>, we craft tangible brand experiences that get <span className="purple-bold">noticed</span>, <span className="purple-bold">remembered</span> and <span className="purple-bold">talked</span> about.
         </p>
 
         {/* Features 4-Column Grid */}

@@ -70,9 +70,8 @@ export default function AboutHero() {
             </p>
           </div>
 
-          {/* Body Copy */}
           <p className="hero-body font-body text-lg lg:text-xl text-[#333] mb-10 leading-relaxed font-medium">
-            We are a full-service creative marketing agency built for brands that want more than just noise. We create ideas, craft experiences and build <span className="brush-underline text-black font-semibold">growth that lasts.</span>
+            We are a full-service <b>creative marketing agency</b> and <b>brand strategy firm</b> built for brands that want more than just noise. We craft experiences and drive <span className="brush-underline text-black font-semibold">digital marketing growth</span> that lasts.
           </p>
 
           {/* CTA */}

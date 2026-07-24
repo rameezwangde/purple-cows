@@ -81,7 +81,7 @@ export default function WebMobileHero() {
         <div className="wm-brand-head">
           <span className="wm-logo-mark">pc//</span>
           <div className="wm-subhead-wrapper">
-            <span className="wm-subhead">WEB & MOBILE SOLUTIONS</span>
+            <span className="wm-subhead">CUSTOM WEB DESIGN & MOBILE APP DEVELOPMENT</span>
             <div className="wm-subhead-line"></div>
           </div>
         </div>

@@ -90,7 +90,7 @@ export default function FilmsHero() {
         </div>
 
         <div className="films-subtitle">
-          <span>FILMS & PHOTOGRAPHY SOLUTIONS</span>
+          <span>CORPORATE VIDEO PRODUCTION & COMMERCIAL PHOTOGRAPHY</span>
           <div className="films-subtitle-line"></div>
         </div>
 

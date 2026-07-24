@@ -98,7 +98,7 @@ export default function SocialMediaHero() {
         </div>
         
         <div className="sm-subhead-wrapper">
-          <span className="sm-subhead">SOCIAL MEDIA & CONTENT STUDIO</span>
+          <span className="sm-subhead">SOCIAL MEDIA MARKETING & CONTENT CREATION</span>
           <div className="sm-subhead-line"></div>
         </div>
 

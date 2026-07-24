@@ -108,7 +108,7 @@ export default function BrandingHero() {
               <span className="bh-line-4">CAN'T IGNORE.</span>
             </h1>
             <p className="bh-new-subtitle">
-              Strategy. Story. Design. Packaging.<br/>
+              <b>Brand Identity Design</b>. Story. <b>Custom Packaging Design</b>.<br/>
               Everything your brand needs to <span className="bh-highlight">stand out</span>, <br/>
               <span className="bh-highlight">connect</span>, and <span className="bh-highlight">grow</span>.
             </p>
