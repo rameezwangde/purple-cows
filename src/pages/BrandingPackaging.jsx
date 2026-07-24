@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import BrandingHero from '../components/branding/BrandingHero';
-import BrandingApproach from '../components/branding/BrandingApproach';
-import BrandingImpact from '../components/branding/BrandingImpact';
+import BrandingExpertise from '../components/branding/BrandingExpertise';
 
 export default function BrandingPackaging() {
   // Ensure we start at the top of the page on route load
@@ -17,8 +16,7 @@ export default function BrandingPackaging() {
       
       <main>
         <BrandingHero />
-        <BrandingApproach />
-        <BrandingImpact />
+        <BrandingExpertise />
       </main>
 
       <Footer />
