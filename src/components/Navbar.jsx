@@ -91,11 +91,11 @@ export default function Navbar() {
             ))}
           </div>
           <div className="mobile-talk">
-            <BrushButton compact>Let's talk</BrushButton>
+            <BrushButton compact href="/contact#contact">Let's talk</BrushButton>
           </div>
         </div>
         <div className="desktop-talk">
-          <BrushButton compact>Let's talk</BrushButton>
+          <BrushButton compact href="/contact#contact">Let's talk</BrushButton>
         </div>
         <button 
           className="menu-toggle relative z-50 ml-auto"
