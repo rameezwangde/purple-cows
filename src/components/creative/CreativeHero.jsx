@@ -123,20 +123,15 @@ export default function CreativeHero() {
           <svg className="cr-doodle" style={{ width: '30px', top: '-15px', left: '-25px' }} viewBox="0 0 50 50">
             <path d="M 15 25 L 5 15 M 25 15 L 25 5 M 35 25 L 45 15 M 10 35 L 5 40" fill="none" stroke="#7C3AED" strokeWidth="3" strokeLinecap="round"/>
           </svg>
-          <SplitText type="chars" text="IDEAS" /><br/>
-          <SplitText type="chars" text="INTO " />
-          <span className="cr-hl-purple"><SplitText type="chars" text="IMPACT." /></span><br/>
-          <SplitText type="chars" text="CONTENT" /><br/>
-          <SplitText type="chars" text="THAT" />
+          <SplitText type="chars" text="SMART" /><br/>
+          <span className="cr-hl-purple"><SplitText type="chars" text="STRATEGY." /></span><br/>
+          <SplitText type="chars" text="BOLD" /><br/>
           <span className="cr-hl-script-wrap">
-            <span className="cr-hl-script">CONNECTS.</span>
+            <span className="cr-hl-script">IDEAS.</span>
             <svg className="cr-hl-underline" viewBox="0 0 300 30" preserveAspectRatio="none">
               <path d="M 10 20 Q 150 5 290 15 M 15 25 Q 140 10 280 22" fill="none" stroke="#7C3AED" strokeWidth="5" strokeLinecap="round" strokeDasharray="1000" strokeDashoffset="0"/>
             </svg>
-          </span><br/>
-          <SplitText type="chars" text="STRATEGY" /><br/>
-          <SplitText type="chars" text="THAT " />
-          <span className="cr-hl-purple"><SplitText type="chars" text="GROWS." /></span>
+          </span>
         </h1>
 
         {/* Features */}
