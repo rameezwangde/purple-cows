@@ -16,7 +16,7 @@ export default function Hero() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-inner">
           <div className="hero-left">
-            <div className="eyebrow">Boring blends in,<br/><span>Bold stands out.</span><svg viewBox="0 0 54 66" aria-hidden="true"><path d="M42 3C6 9 10 42 35 55M35 55l-3-15m3 15 15-5" /></svg></div>
+            <div className="eyebrow">Boring blends in,<br/><span>Bold stands out.</span><svg viewBox="0 0 54 66" aria-hidden="true"><path d="M42 3C6 9 10 42 35 55M35 55l-3-15m3 15l-15-5" /></svg></div>
             <h1 id="hero-title" className="hero-title">
               <span className="headline-line"><span>We don&apos;t</span></span>
               <span className="headline-line"><span>do ordinary,</span></span>

@@ -12,6 +12,5 @@ export default function ServiceOrbit(){
   <svg className="orbit-ring" viewBox="0 0 760 650" aria-hidden="true"><ellipse cx="380" cy="325" rx="310" ry="252"/></svg><div className="orbit-paint"/>
   <img className="services-cow" src={cow} alt="Purple Cow creative director mascot wearing sunglasses and a black hoodie"/>
   {services.map((s,i)=><ServiceCard key={s.id} service={s} cardRef={n=>cards.current[i]=n} onEnter={pause} onLeave={()=>speed.current=1}/>)}
-  <span className="orbit-plane" aria-hidden="true">?</span><span className="orbit-star" aria-hidden="true">?</span><span className="orbit-sticky" aria-hidden="true">?</span>
  </div>
 }
