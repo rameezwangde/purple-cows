@@ -23,7 +23,6 @@ export default function BlogPost() {
           .blog-page .site-header { background: #ffffff; border-bottom: 1px solid rgba(0,0,0,0.1); }
           .blog-page .nav-links a { color: #111; }
           .blog-page .brand img { background: transparent; padding: 0; }
-          .blog-page .menu-toggle { color: #111; }
         `}</style>
         <Navbar />
         <main style={{ minHeight: '60vh', paddingTop: '200px', textAlign: 'center' }}>
@@ -44,7 +43,6 @@ export default function BlogPost() {
         .blog-page .site-header { background: #ffffff; border-bottom: 1px solid rgba(0,0,0,0.1); }
         .blog-page .nav-links a { color: #111; }
         .blog-page .brand img { background: transparent; padding: 0; }
-        .blog-page .menu-toggle { color: #111; }
         
         .blog-post-hero {
           padding: 160px 5vw 80px;

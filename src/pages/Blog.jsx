@@ -39,7 +39,6 @@ export default function Blog() {
         .blog-page .site-header { background: #ffffff; border-bottom: 1px solid rgba(0,0,0,0.1); }
         .blog-page .nav-links a { color: #111; }
         .blog-page .brand img { background: transparent; padding: 0; }
-        .blog-page .menu-toggle { color: #111; }
         @media (max-width: 900px) {
           .blog-why-section { grid-template-columns: 1fr !important; gap: 40px !important; padding: 60px 5vw !important; }
         }
