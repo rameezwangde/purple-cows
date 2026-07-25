@@ -9,7 +9,9 @@ export const contactInfo = {
   mapUrl: 'https://www.google.com/maps/search/?api=1&query=B-59,+Sector+8,+Noida,+Uttar+Pradesh+201306',
   embedUrl: 'https://maps.google.com/maps?width=100%25&height=600&hl=en&q=B-59,%20Sector%208,%20Noida+(We%20Are%20Purple%20Cow)&t=&z=16&ie=UTF8&iwloc=B&output=embed',
   socials: {
-    instagram: 'https://www.instagram.com/wearepurplecow?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
+    instagram: 'https://www.instagram.com/wearepurplecow?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+    facebook: 'https://www.facebook.com/people/We-Are-Purple-Cow/61564790202771/',
+    linkedin: 'https://www.linkedin.com/company/https-purplecow-kvu5y26.public.builtwithrocket.new-/posts/?feedView=all'
   }
 }
 export const serviceOptions = ['Brand Strategy','Branding & Identity','Website Design & Development','Digital Marketing','Social Media Management','Content Marketing','Campaign Support','Something Else']
