@@ -116,12 +116,7 @@ export default function WorkSection() {
           
           <div className="ws-intro-right">
             <p>We partner with ambitious businesses to deliver powerful <b>web design</b>, <b>UI/UX</b>, and <b>digital marketing services</b> that drive real results. Here are some of the brands we've built and grown.</p>
-            <div className="ws-floating-doodles">
-              <span className="ws-doodle-sparkle">✨</span>
-              <svg className="ws-doodle-lines" width="40" height="40" viewBox="0 0 40 40">
-                <path d="M10,10 L30,30 M30,10 L10,30" stroke="#7a2eff" strokeWidth="2" strokeLinecap="round" opacity="0.5"/>
-              </svg>
-            </div>
+
           </div>
         </div>
 

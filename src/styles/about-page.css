@@ -3,7 +3,7 @@
 
 :root {
   --about-dark: #101014;
-  --about-light: #F8F6F2;
+  --about-light: #fcfcfb;
   --about-purple: #7A2EFF;
   --about-purple-dark: #5B18D1;
   --about-gray: #6C6C6C;
@@ -124,18 +124,4 @@ span.brush-underline::after {
   transform: translate(4px, -4px);
 }
 
-/* Navbar Active State */
-.nav-links a.active-link {
-  position: relative;
-  color: var(--about-purple) !important;
-}
-.nav-links a.active-link::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--about-purple);
-  border-radius: 2px;
-}
+

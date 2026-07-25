@@ -5,6 +5,7 @@ import logo from '../assets/logo/purple-cow-logo-transparent.png'
 const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about' },
+  { label: 'Work', to: '/work' },
   { label: 'Contact', to: '/contact' },
   { label: 'Blog', to: '/blog' }
 ]

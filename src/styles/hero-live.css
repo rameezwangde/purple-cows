@@ -27,7 +27,7 @@ button { font: inherit; }
 .nav-links { display: flex; align-items: center; justify-content: center; gap: clamp(24px, 3.8vw, 62px); }
 .nav-links a { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 14px 0; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
 .nav-links a::after { content: ''; position: absolute; left: 0; right: 100%; bottom: 6px; height: 2px; background: var(--purple); transition: right .3s cubic-bezier(.22,1,.36,1); }
-.nav-links a:hover::after, .nav-links a:focus-visible::after { right: 0; }
+.nav-links a:hover::after, .nav-links a:focus-visible::after, .nav-links a.active-link::after { right: 0; }
 .desktop-talk { justify-self: end; }
 .mobile-talk, .menu-toggle { display: none; }
 

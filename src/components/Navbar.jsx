@@ -8,6 +8,10 @@ const links = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about' },
   { 
+    label: 'Work', 
+    to: '/work' 
+  },
+  { 
     label: 'Solutions', 
     to: '#', 
     dropdown: [

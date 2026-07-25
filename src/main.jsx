@@ -14,7 +14,7 @@ import '@fontsource/inter/800.css'
 
 const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
-
+const Work = lazy(() => import('./pages/Work'))
 const StrategyPlanning = lazy(() => import('./pages/StrategyPlanning'))
 const BrandingPackaging = lazy(() => import('./pages/BrandingPackaging'))
 const Contact = lazy(() => import('./pages/Contact'))
@@ -43,6 +43,7 @@ import { useLocation } from 'react-router-dom'
 const routeMeta = {
   '/': { title: 'We Are Purple Cow | Creative Marketing Agency', description: 'We are a premier creative marketing agency offering expert brand strategy, UI/UX web design, and digital marketing services to build brands that stand out.' },
   '/about': { title: 'About Us | We Are Purple Cow', description: 'Learn about Purple Cow, a top digital marketing agency and brand strategy firm offering expert SEO, web design, and digital advertising.' },
+  '/work': { title: 'Our Work | We Are Purple Cow', description: 'Explore our portfolio of custom web design, UI/UX, and digital marketing campaigns that drive real results.' },
   '/solutions/strategy-and-planning': { title: 'Strategy & Planning | We Are Purple Cow', description: 'Expert brand strategy consulting, positioning, and marketing strategy to build brands that connect and grow.' },
   '/solutions/branding-and-packaging': { title: 'Branding & Packaging | We Are Purple Cow', description: 'Stand out with our brand identity design and custom packaging design from a leading creative agency.' },
   '/solutions/web-and-mobile': { title: 'Web & Mobile Solutions | We Are Purple Cow', description: 'Custom web design, UI/UX services, and mobile app development that move brands forward.' },
@@ -75,6 +76,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
+            <Route path="/work" element={<Work/>}/>
             <Route path="/solutions/strategy-and-planning" element={<StrategyPlanning/>}/>
             <Route path="/solutions/branding-and-packaging" element={<BrandingPackaging/>}/>
             <Route path="/solutions/web-and-mobile" element={<WebAndMobile/>}/>
