@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ArrowUpRight } from 'lucide-react';
 import AboutCollage from './AboutCollage';
@@ -76,12 +77,12 @@ export default function AboutHero() {
 
           {/* CTA */}
           <div className="hero-cta">
-            <a href="#contact" className="magnetic-btn group inline-flex items-center gap-4 bg-[#7A2EFF] text-white px-8 py-4 rounded-full font-display text-xl tracking-wider uppercase hover:bg-[#5B18D1] transition-colors focus:outline-none focus:ring-4 focus:ring-[#7A2EFF]/50">
+            <Link to="/contact" className="magnetic-btn group inline-flex items-center gap-4 bg-[#7A2EFF] text-white px-8 py-4 rounded-full font-display text-xl tracking-wider uppercase hover:bg-[#5B18D1] transition-colors focus:outline-none focus:ring-4 focus:ring-[#7A2EFF]/50">
               LET'S CREATE IMPACT
               <span className="bg-[#101014] text-white rounded-full p-1.5 flex items-center justify-center arrow-icon transition-transform duration-300">
                 <ArrowUpRight size={20} strokeWidth={3} />
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

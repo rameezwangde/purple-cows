@@ -85,11 +85,7 @@ export default function SocialMediaSolutions() {
         </svg>
       </div>
 
-      <div className="sol-decor sol-decor-arrow-left">
-        <svg width="60" height="60" viewBox="0 0 100 100" fill="none" stroke="#111111" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M70 20 Q 30 30 30 70 M 20 60 L 30 70 L 45 60"/>
-        </svg>
-      </div>
+
       
       <div className="sol-decor sol-decor-star-right">
         <svg width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="#111111" strokeWidth="4" strokeLinejoin="round">

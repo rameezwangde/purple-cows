@@ -67,16 +67,8 @@ export default function FilmsCapabilities() {
     <section className="fc-section" ref={containerRef}>
       
       {/* BACKGROUND DECORATIONS */}
-      <svg className="fc-doodle fc-doodle-swirl-tl" viewBox="0 0 100 100">
-        <path d="M50 10 C30 10, 20 30, 40 50 C60 70, 80 50, 70 30 C60 10, 40 20, 50 60 C55 80, 40 90, 30 85" fill="none" stroke="#111" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M25 80 L30 85 L35 78" fill="none" stroke="#111" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
       <svg className="fc-doodle fc-doodle-star-tl" viewBox="0 0 100 100">
         <path d="M50 10 L55 45 L90 50 L55 55 L50 90 L45 55 L10 50 L45 45 Z" fill="none" stroke="#7a2eff" strokeWidth="6" strokeLinejoin="round"/>
-      </svg>
-      <svg className="fc-doodle fc-doodle-arrow-tr" viewBox="0 0 100 100">
-        <path d="M10 90 Q 30 20 90 20" fill="none" stroke="#111" strokeWidth="4" strokeLinecap="round"/>
-        <path d="M70 10 L90 20 L75 35" fill="none" stroke="#111" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
       <svg className="fc-doodle fc-doodle-dots-tr" viewBox="0 0 120 120">
         <circle cx="20" cy="20" r="4" fill="#7a2eff"/>

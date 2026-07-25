@@ -41,7 +41,6 @@ export default function ContactForm() {
       <div className="ct-form-intro">
         <h2>Send Us a <span>Message</span></h2>
         <p>Fill in the details below and we’ll get back to you within 24 business hours.</p>
-        <i aria-hidden="true">&#x2198;&#xFE0E;</i>
       </div>
       <div className="ct-fields">
         <div className="ct-field">

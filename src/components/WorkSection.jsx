@@ -105,10 +105,6 @@ export default function WorkSection() {
           <div className="ws-intro-left">
             <div className="ws-note-wrapper">
               <span className="ws-proud-note">Proud partnerships.</span>
-              <svg className="ws-curly-arrow" width="30" height="40" viewBox="0 0 30 40" fill="none">
-                <path d="M25,2 C10,10 5,20 15,35" stroke="#7a2eff" strokeWidth="2" strokeLinecap="round"/>
-                <path d="M10,30 L15,35 L20,28" stroke="#7a2eff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
             </div>
             
             <h2 className="ws-heading">
@@ -172,10 +168,6 @@ export default function WorkSection() {
         {/* Stats Strip */}
         <div className="ws-stats-strip">
           <div className="ws-stats-title">
-            <svg className="ws-swirl" width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <path d="M10,20 C10,10 30,10 30,20 C30,30 20,35 15,25" stroke="#7a2eff" strokeWidth="2" strokeLinecap="round"/>
-              <path d="M15,20 L15,25 L20,25" stroke="#7a2eff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
             <h4>RESULTS THAT<br/><span>SPEAK LOUD.</span></h4>
             <div className="ws-thin-underline"></div>
           </div>

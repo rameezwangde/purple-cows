@@ -48,12 +48,7 @@ export default function PerformanceEcosystem() {
   return (
     <section className="eco-section" ref={containerRef}>
       
-      {/* Decorative scribbles background */}
-      <div className="eco-decor eco-decor-arrow-left">
-        <svg width="60" height="80" viewBox="0 0 100 120" fill="none" stroke="#7a2eff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M70 20 Q 30 40 30 90 M 15 75 L 30 90 L 50 80"/>
-        </svg>
-      </div>
+
       
       <div className="eco-decor eco-decor-star-right">
         <svg width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="#7a2eff" strokeWidth="3" strokeLinejoin="round">

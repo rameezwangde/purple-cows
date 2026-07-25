@@ -26,7 +26,7 @@ export default function Hero() {
             <svg className="brush-underline" viewBox="0 0 640 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 11c100-7 190 2 288-2 115-4 215 4 344 9"/></svg>
             <p className="hero-copy">As a leading <mark>creative marketing agency</mark>, we rhyme ideas with impact. From expert <b>brand strategy</b> and <b>UI/UX web design</b> to <b>digital marketing</b>, we build brands that connect, convert and <mark>last</mark>.</p>
             <div className="hero-actions">
-              <BrushButton>Let&apos;s build your next big thing</BrushButton>
+              <BrushButton href="/about">Let&apos;s build your next big thing</BrushButton>
               <div className="action-note"><svg viewBox="0 0 60 22" aria-hidden="true"><path d="M2 17c19-15 34-13 51-7m0 0-8-7m8 7-6 7"/></svg><span>Big ideas<br/>start here!</span></div>
             </div>
           </div>
