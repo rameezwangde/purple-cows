@@ -1,2 +1,3 @@
 import { ArrowRight, Heart } from 'lucide-react'
-export default function ContactCTA(){return <section className="ct-cta ct-reveal"><div className="ct-cta-note">Great things<br/>happen when<br/>we collaborate.<Heart/></div><div><h2>Ready to turn your ideas into <span>impact?</span></h2><p>Let’s make it happen.</p></div><a href="mailto:contactus@wearepurplecow.com">Book a consultation <ArrowRight/></a></section>}
+import { contactInfo } from '../../data/contactInfo'
+export default function ContactCTA(){const waLink=`https://wa.me/${contactInfo.phone.replace(/[^0-9]/g, '')}`;return <section className="ct-cta ct-reveal"><div className="ct-cta-note">Great things<br/>happen when<br/>we collaborate.<Heart/></div><div><h2>Ready to turn your ideas into <span>impact?</span></h2><p>Let’s make it happen.</p></div><a href={waLink} target="_blank" rel="noopener noreferrer">Book a consultation <ArrowRight/></a></section>}

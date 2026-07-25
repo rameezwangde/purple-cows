@@ -22,7 +22,7 @@ import './styles/services-page.css'
 import './styles/insights.css'
 import './styles/contact.css'
 import SmoothScrollProvider from './components/SmoothScrollProvider'
-import FloatingWhatsApp from './components/FloatingWhatsApp'
+import FloatingContacts from './components/FloatingContacts'
 import { HelmetProvider, Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router-dom'
 
@@ -56,7 +56,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <SmoothScrollProvider>
       <BrowserRouter>
         <RouteSEO />
-        <FloatingWhatsApp />
+        <FloatingContacts />
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
