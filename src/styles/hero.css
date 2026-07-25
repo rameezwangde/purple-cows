@@ -129,6 +129,7 @@ button { font: inherit; }
   .hero-inner { width: 100%; height: auto; display: block; }
   .hero-left { padding: 48px 28px 25px; }
   .eyebrow { margin-left: 15px; }
+  .eyebrow svg { display: none; }
   .hero-title { width: 100%; max-width: none; font-size: clamp(52px, 9.2vw, 80px); }
   .brush-underline { max-width: 680px; }
   .hero-copy { max-width: 650px; font-size: 16px; }
@@ -149,7 +150,7 @@ button { font: inherit; }
 @media (max-width: 600px) {
   .hero-left { padding: 40px 18px 10px; }
   .eyebrow { font-size: 23px; margin: 0 0 20px 18px; }
-  .eyebrow svg { width: 40px; left: -26px; }
+  .eyebrow svg { display: none; }
   .hero-title { font-size: clamp(42px, 13.7vw, 68px); line-height: .92; letter-spacing: -.02em; }
   .headline-line { white-space: normal; }
   .brush-underline { height: 16px; margin-bottom: 15px; }
