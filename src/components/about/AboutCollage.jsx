@@ -45,17 +45,7 @@ export default function AboutCollage() {
       
       {/* Team Photo Removed as requested */}
 
-      {/* Torn White Note */}
-      <div className="collage-item absolute top-[5%] lg:top-[10%] left-[2%] lg:left-[5%] w-[240px] lg:w-[280px] bg-[#F8F6F2] p-6 lg:p-8 shadow-xl transform -rotate-2 z-20 torn-edge-white invisible">
-        <p className="font-handwritten text-xl lg:text-3xl text-black leading-tight">
-          Good ideas <br/>build <span className="brush-underline text-black">brands.</span><br/><br/>
-          Great ideas <br/>build <span className="brush-underline text-[#7A2EFF]">legacies.</span>
-        </p>
-        <svg className="doodle absolute bottom-4 right-4 w-6 h-6 text-[#7A2EFF] invisible" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-        </svg>
-      </div>
-
+      {/* Torn White Note removed as requested */}
       {/* Purple Sticky Note */}
       <div className="collage-item absolute top-[-5%] lg:top-[0%] right-[5%] lg:right-[20%] w-[160px] lg:w-[180px] h-[160px] lg:h-[180px] bg-[#7A2EFF] p-5 shadow-lg transform rotate-6 z-30 invisible">
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-6 bg-black/80 transform rotate-1"></div>
@@ -89,13 +79,7 @@ export default function AboutCollage() {
         </div>
       </div>
 
-      {/* Black Note */}
-      <div className="collage-item absolute bottom-[-5%] lg:bottom-[5%] left-[10%] lg:left-[15%] w-[220px] lg:w-[260px] bg-[#101014] p-6 shadow-xl transform -rotate-1 z-40 torn-edge-black border-t border-gray-800 invisible">
-        <p className="font-handwritten text-2xl lg:text-3xl text-white leading-tight">
-          We turn bold ideas into <br/>real-world <span className="text-[#7A2EFF]">impact.</span>
-        </p>
-      </div>
-
+      {/* Black Note removed as requested */}
     </div>
   );
 }

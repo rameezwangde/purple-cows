@@ -174,11 +174,11 @@ export default function InnerCodeSection() {
           <div className="centerpiece relative lg:absolute mt-12 lg:mt-0 top-auto lg:top-1/2 left-auto lg:left-1/2 transform-none lg:-translate-x-1/2 lg:-translate-y-1/2 w-[300px] lg:w-[450px] h-[300px] lg:h-[450px] z-10 pointer-events-none order-first lg:order-none">
             {/* Paint Splash Base */}
             <div className="absolute inset-0 bg-[#7B2EFF] opacity-10 filter blur-[40px] rounded-full scale-125"></div>
-            <img src="https://images.unsplash.com/photo-1558486012-817176f84c6d?auto=format&fit=crop&q=80&w=800" alt="Purple Paint Splash" className="absolute inset-0 w-full h-full object-contain mix-blend-multiply opacity-50" style={{ clipPath: 'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)' }}/>
+            <img src="https://images.unsplash.com/photo-1558486012-817176f84c6d?auto=format&fit=crop&q=80&w=800" alt="Purple Paint Splash" className="absolute inset-0 w-full h-full object-contain mix-blend-multiply opacity-50" style={{ clipPath: 'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)' }} loading="lazy" />
             
             {/* Mascot Image Placeholder */}
             <div className="absolute inset-4 flex items-center justify-center">
-               <img src="https://images.unsplash.com/photo-1554672408-730436b60dde?auto=format&fit=crop&q=80&w=600" alt="Mascot Placeholder" className="w-[80%] h-[80%] object-cover rounded-full border-4 border-black shadow-[15px_15px_0px_#7B2EFF] float-slow pointer-events-auto"/>
+               <img src="https://images.unsplash.com/photo-1554672408-730436b60dde?auto=format&fit=crop&q=80&w=600" alt="Mascot Placeholder" className="w-[80%] h-[80%] object-cover rounded-full border-4 border-black shadow-[15px_15px_0px_#7B2EFF] float-slow pointer-events-auto" loading="lazy" />
             </div>
 
             {/* Floating Assets around Mascot */}

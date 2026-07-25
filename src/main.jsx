@@ -1,16 +1,28 @@
 import ReactDOM from 'react-dom/client'
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
-import Work from './pages/Work'
-import StrategyPlanning from './pages/StrategyPlanning'
-import BrandingPackaging from './pages/BrandingPackaging'
-import Contact from './pages/Contact'
-import WebAndMobile from './pages/WebAndMobile'
-import SocialMedia from './pages/SocialMedia'
-import PerformanceMarketing from './pages/PerformanceMarketing'
-import OfflineCreative from './pages/OfflineCreative'
-import FilmsPhotoshoots from './pages/FilmsPhotoshoots'
+import '@fontsource/anton'
+import '@fontsource/caveat/400.css'
+import '@fontsource/caveat/500.css'
+import '@fontsource/caveat/600.css'
+import '@fontsource/caveat/700.css'
+import '@fontsource/inter/400.css'
+import '@fontsource/inter/500.css'
+import '@fontsource/inter/600.css'
+import '@fontsource/inter/700.css'
+import '@fontsource/inter/800.css'
+
+const Home = lazy(() => import('./pages/Home'))
+const About = lazy(() => import('./pages/About'))
+const Work = lazy(() => import('./pages/Work'))
+const StrategyPlanning = lazy(() => import('./pages/StrategyPlanning'))
+const BrandingPackaging = lazy(() => import('./pages/BrandingPackaging'))
+const Contact = lazy(() => import('./pages/Contact'))
+const WebAndMobile = lazy(() => import('./pages/WebAndMobile'))
+const SocialMedia = lazy(() => import('./pages/SocialMedia'))
+const PerformanceMarketing = lazy(() => import('./pages/PerformanceMarketing'))
+const OfflineCreative = lazy(() => import('./pages/OfflineCreative'))
+const FilmsPhotoshoots = lazy(() => import('./pages/FilmsPhotoshoots'))
 import './styles/hero-live.css'
 import './styles/services-orbit.css'
 import './styles/impact-workspace.css'
@@ -57,20 +69,22 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <RouteSEO />
         <FloatingContacts />
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/work" element={<Work/>}/>
-          <Route path="/solutions/strategy-and-planning" element={<StrategyPlanning/>}/>
-          <Route path="/solutions/branding-and-packaging" element={<BrandingPackaging/>}/>
-          <Route path="/solutions/web-and-mobile" element={<WebAndMobile/>}/>
-          <Route path="/solutions/social-media-management" element={<SocialMedia/>}/>
-          <Route path="/solutions/performance-marketing" element={<PerformanceMarketing/>}/>
-          <Route path="/solutions/offline-creative" element={<OfflineCreative/>}/>
-          <Route path="/solutions/films-and-photoshoots" element={<FilmsPhotoshoots/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-          <Route path="*" element={<Home/>}/>
-        </Routes>
+        <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#0a0a0a', color: '#fff' }}>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/work" element={<Work/>}/>
+            <Route path="/solutions/strategy-and-planning" element={<StrategyPlanning/>}/>
+            <Route path="/solutions/branding-and-packaging" element={<BrandingPackaging/>}/>
+            <Route path="/solutions/web-and-mobile" element={<WebAndMobile/>}/>
+            <Route path="/solutions/social-media-management" element={<SocialMedia/>}/>
+            <Route path="/solutions/performance-marketing" element={<PerformanceMarketing/>}/>
+            <Route path="/solutions/offline-creative" element={<OfflineCreative/>}/>
+            <Route path="/solutions/films-and-photoshoots" element={<FilmsPhotoshoots/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path="*" element={<Home/>}/>
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </SmoothScrollProvider>
   </HelmetProvider>

@@ -53,14 +53,14 @@ export default function TeamCultureSection() {
             <div className="relative w-full max-w-[500px] aspect-square">
               {/* Image Placeholders with B&W styling */}
               <div className="team-img invisible absolute top-0 left-0 w-[60%] aspect-[4/3] bg-gray-800 p-2 transform -rotate-3 z-10 shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Team brainstorm" className="w-full h-full object-cover filter grayscale opacity-90 mix-blend-screen" />
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Team brainstorm" className="w-full h-full object-cover filter grayscale opacity-90 mix-blend-screen" loading="lazy" />
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-6 bg-white/20 transform rotate-2"></div>
               </div>
 
 
 
               <div className="team-img invisible absolute bottom-0 left-[10%] w-[65%] aspect-video bg-gray-800 p-2 transform -rotate-1 z-10 shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="Laptop and notes" className="w-full h-full object-cover filter grayscale opacity-90 mix-blend-screen" />
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="Laptop and notes" className="w-full h-full object-cover filter grayscale opacity-90 mix-blend-screen" loading="lazy" />
               </div>
 
               {/* Purple Note */}
