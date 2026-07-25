@@ -64,7 +64,7 @@ export default function TeamCultureSection() {
               </div>
 
               {/* Purple Note */}
-              <div className="team-note invisible absolute top-[10%] left-[-10%] w-[180px] bg-[#7A2EFF] p-5 shadow-xl transform rotate-6 z-30">
+              <div className="team-note hidden md:block invisible absolute top-[10%] left-[-10%] w-[180px] bg-[#7A2EFF] p-5 shadow-xl transform rotate-6 z-30">
                 <p className="font-handwritten text-xl text-white leading-tight">
                   Different minds.<br/>One creative rhythm.
                 </p>
@@ -73,7 +73,7 @@ export default function TeamCultureSection() {
               </div>
 
               {/* Torn Note */}
-              <div className="team-note invisible absolute bottom-[5%] right-[-5%] w-[220px] bg-[#F8F6F2] p-5 shadow-xl transform -rotate-3 z-30 torn-edge">
+              <div className="team-note hidden md:block invisible absolute bottom-[5%] right-[-5%] w-[220px] bg-[#F8F6F2] p-5 shadow-xl transform -rotate-3 z-30 torn-edge">
                 <p className="font-handwritten text-lg text-black leading-tight">
                   Strategists, designers, writers, developers and problem-solvers — <span className="brush-underline text-[#7A2EFF]">working as one team.</span>
                 </p>
