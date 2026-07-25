@@ -35,9 +35,9 @@ const projects = [
     iconPath: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
   },
   {
-    title: 'MaxHealthcarePremium',
+    title: 'Privicare Multispeciality Hospital',
     industry: 'Healthcare',
-    description: 'Premium healthcare website designed for trust, accessibility and a seamless user experience.',
+    description: 'Address: PLOT NO 3, Amravati Rd, opposite WADI POLICE STATION, Shivshakthi Nagar, Maruti Nagar, Duttawadi, Wadi, Maharashtra 440023',
     url: 'https://maxhealthcarepremium.vercel.app',
     image: '/work/maxhealthcare.png',
     iconPath: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
