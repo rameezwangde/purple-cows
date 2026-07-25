@@ -15,100 +15,110 @@ export default function FloatingContacts() {
   const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${contactInfo.email}`;
   
   return (
-    <div style={{
-      position: 'fixed',
-      bottom: '30px',
-      right: '30px',
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '15px',
-      zIndex: 9999
-    }}>
-      <a 
-        href={gmailLink} 
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Open in Gmail"
-        className="floating-gmail"
-        style={{
-          width: '60px',
-          height: '60px',
-          backgroundColor: '#EA4335',
-          color: 'white',
-          borderRadius: '50%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: '0 10px 25px rgba(234, 67, 53, 0.4)',
-          transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.transform = 'scale(1.1) translateY(-5px)';
-          e.currentTarget.style.boxShadow = '0 15px 35px rgba(234, 67, 53, 0.5)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.transform = 'scale(1) translateY(0)';
-          e.currentTarget.style.boxShadow = '0 10px 25px rgba(234, 67, 53, 0.4)';
-        }}
-      >
-        <GmailIcon size={28} />
-      </a>
+    <>
+      <style dangerouslySetInnerHTML={{__html: `
+        .floating-gmail { display: flex !important; }
+        .floating-mail { display: none !important; }
+        @media(max-width: 700px) {
+          .floating-gmail { display: none !important; }
+          .floating-mail { display: flex !important; }
+        }
+      `}} />
+      <div style={{
+        position: 'fixed',
+        bottom: '30px',
+        right: '30px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '15px',
+        zIndex: 9999
+      }}>
+        <a 
+          href={gmailLink} 
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open in Gmail"
+          className="floating-gmail"
+          style={{
+            width: '60px',
+            height: '60px',
+            backgroundColor: '#EA4335',
+            color: 'white',
+            borderRadius: '50%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 10px 25px rgba(234, 67, 53, 0.4)',
+            transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'scale(1.1) translateY(-5px)';
+            e.currentTarget.style.boxShadow = '0 15px 35px rgba(234, 67, 53, 0.5)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'scale(1) translateY(0)';
+            e.currentTarget.style.boxShadow = '0 10px 25px rgba(234, 67, 53, 0.4)';
+          }}
+        >
+          <GmailIcon size={28} />
+        </a>
 
-      <a 
-        href={`mailto:${contactInfo.email}`} 
-        aria-label="Email Us (Default App)"
-        style={{
-          width: '60px',
-          height: '60px',
-          backgroundColor: '#7a2eff',
-          color: 'white',
-          borderRadius: '50%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: '0 10px 25px rgba(122, 46, 255, 0.4)',
-          transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.transform = 'scale(1.1) translateY(-5px)';
-          e.currentTarget.style.boxShadow = '0 15px 35px rgba(122, 46, 255, 0.5)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.transform = 'scale(1) translateY(0)';
-          e.currentTarget.style.boxShadow = '0 10px 25px rgba(122, 46, 255, 0.4)';
-        }}
-      >
-        <Mail size={30} />
-      </a>
-      
-      <a 
-        href={waLink} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        aria-label="Chat on WhatsApp"
-        style={{
-          width: '60px',
-          height: '60px',
-          backgroundColor: '#25D366',
-          color: 'white',
-          borderRadius: '50%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: '0 10px 25px rgba(37, 211, 102, 0.4)',
-          transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.transform = 'scale(1.1) translateY(-5px)';
-          e.currentTarget.style.boxShadow = '0 15px 35px rgba(37, 211, 102, 0.5)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.transform = 'scale(1) translateY(0)';
-          e.currentTarget.style.boxShadow = '0 10px 25px rgba(37, 211, 102, 0.4)';
-        }}
-      >
-        <WhatsAppIcon size={32} />
-      </a>
-    </div>
+        <a 
+          href={`mailto:${contactInfo.email}`} 
+          aria-label="Email Us (Default App)"
+          className="floating-mail"
+          style={{
+            width: '60px',
+            height: '60px',
+            backgroundColor: '#7a2eff',
+            color: 'white',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 10px 25px rgba(122, 46, 255, 0.4)',
+            transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'scale(1.1) translateY(-5px)';
+            e.currentTarget.style.boxShadow = '0 15px 35px rgba(122, 46, 255, 0.5)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'scale(1) translateY(0)';
+            e.currentTarget.style.boxShadow = '0 10px 25px rgba(122, 46, 255, 0.4)';
+          }}
+        >
+          <Mail size={30} />
+        </a>
+        
+        <a 
+          href={waLink} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          aria-label="Chat on WhatsApp"
+          style={{
+            width: '60px',
+            height: '60px',
+            backgroundColor: '#25D366',
+            color: 'white',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 10px 25px rgba(37, 211, 102, 0.4)',
+            transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'scale(1.1) translateY(-5px)';
+            e.currentTarget.style.boxShadow = '0 15px 35px rgba(37, 211, 102, 0.5)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'scale(1) translateY(0)';
+            e.currentTarget.style.boxShadow = '0 10px 25px rgba(37, 211, 102, 0.4)';
+          }}
+        >
+          <WhatsAppIcon size={32} />
+        </a>
+      </div>
+    </>
   );
 }
