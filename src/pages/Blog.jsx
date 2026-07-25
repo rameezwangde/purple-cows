@@ -37,6 +37,9 @@ export default function Blog() {
     <div className="insights-page blog-page" ref={root}>
       <style>{`
         .blog-page .site-header { background: #ffffff; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .blog-page .nav-links a { color: #111; }
+        .blog-page .brand img { background: transparent; padding: 0; }
+        .blog-page .menu-toggle { color: #111; }
         @media (max-width: 900px) {
           .blog-why-section { grid-template-columns: 1fr !important; gap: 40px !important; padding: 60px 5vw !important; }
         }
@@ -51,8 +54,8 @@ export default function Blog() {
           <div className="in-hero-copy">
             <p className="in-eyebrow">Our Blog</p>
             <h1 style={{ fontSize: 'clamp(50px, 6.5vw, 85px)', lineHeight: '0.9', marginBottom: '35px' }}>
-              <strong>Marketing Insights</strong><br />
-              <span>That Drive</span><br />
+              <strong>Marketing Insights</strong>
+              <span>That Drive</span>
               <span>Real Growth.</span>
             </h1>
             <p className="in-lede" style={{ marginBottom: '40px', maxWidth: '580px', fontSize: '16px', lineHeight: '1.6' }}>
@@ -126,7 +129,7 @@ export default function Blog() {
             </p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-            <a href="mailto:contactus@wearepurplecow.com" style={{ display: 'flex', justifyContent: 'space-between', padding: '18px 25px', background: '#111', color: '#fff', fontWeight: '800', textTransform: 'uppercase', clipPath: 'polygon(2% 6%,98% 0,100% 90%,0 100%)' }}>
+            <a href="https://wa.me/917840070004" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', justifyContent: 'space-between', padding: '18px 25px', background: '#111', color: '#fff', fontWeight: '800', textTransform: 'uppercase', clipPath: 'polygon(2% 6%,98% 0,100% 90%,0 100%)' }}>
               Start Your Project <ArrowRight/>
             </a>
             <a href="/contact" style={{ display: 'flex', justifyContent: 'space-between', padding: '16px 25px', background: 'transparent', color: '#111', border: '2px solid #111', fontWeight: '800', textTransform: 'uppercase', clipPath: 'polygon(2% 6%,98% 0,100% 90%,0 100%)' }}>
