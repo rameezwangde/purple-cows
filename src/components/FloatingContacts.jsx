@@ -29,6 +29,7 @@ export default function FloatingContacts() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Open in Gmail"
+        className="floating-gmail"
         style={{
           width: '60px',
           height: '60px',
