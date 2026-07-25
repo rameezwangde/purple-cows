@@ -11,7 +11,8 @@ export const contactInfo = {
   socials: {
     instagram: 'https://www.instagram.com/wearepurplecow?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
     facebook: 'https://www.facebook.com/people/We-Are-Purple-Cow/61564790202771/',
-    linkedin: 'https://www.linkedin.com/company/https-purplecow-kvu5y26.public.builtwithrocket.new-/posts/?feedView=all'
+    linkedin: 'https://www.linkedin.com/company/https-purplecow-kvu5y26.public.builtwithrocket.new-/posts/?feedView=all',
+    youtube: 'https://www.youtube.com/@wearepurplecow/videos'
   }
 }
 export const serviceOptions = ['Brand Strategy','Branding & Identity','Website Design & Development','Digital Marketing','Social Media Management','Content Marketing','Campaign Support','Something Else']

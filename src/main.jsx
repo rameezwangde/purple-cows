@@ -18,6 +18,7 @@ const Work = lazy(() => import('./pages/Work'))
 const StrategyPlanning = lazy(() => import('./pages/StrategyPlanning'))
 const BrandingPackaging = lazy(() => import('./pages/BrandingPackaging'))
 const Contact = lazy(() => import('./pages/Contact'))
+const Blog = lazy(() => import('./pages/Blog'))
 const WebAndMobile = lazy(() => import('./pages/WebAndMobile'))
 const SocialMedia = lazy(() => import('./pages/SocialMedia'))
 const PerformanceMarketing = lazy(() => import('./pages/PerformanceMarketing'))
@@ -49,7 +50,8 @@ const routeMeta = {
   '/solutions/performance-marketing': { title: 'Performance Marketing & SEO | We Are Purple Cow', description: 'Data-driven SEO services, Google Ads, and performance marketing to grow visibility and scale.' },
   '/solutions/offline-creative': { title: 'Offline Creative | We Are Purple Cow', description: 'Tangible print design and OOH advertising that gets noticed and remembered.' },
   '/solutions/films-and-photoshoots': { title: 'Films & Photoshoots | We Are Purple Cow', description: 'Corporate video production and commercial photography that tells your brand story.' },
-  '/contact': { title: 'Contact Us | We Are Purple Cow', description: 'Partner with a top creative marketing agency. Contact us for expert brand strategy and digital marketing services.' }
+  '/contact': { title: 'Contact Us | We Are Purple Cow', description: 'Partner with a top creative marketing agency. Contact us for expert brand strategy and digital marketing services.' },
+  '/blog': { title: 'Blog | We Are Purple Cow', description: 'Read the latest insights and stories from the Purple Cow team.' }
 };
 
 function RouteSEO() {
@@ -82,6 +84,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="/solutions/offline-creative" element={<OfflineCreative/>}/>
             <Route path="/solutions/films-and-photoshoots" element={<FilmsPhotoshoots/>}/>
             <Route path="/contact" element={<Contact/>}/>
+            <Route path="/blog" element={<Blog/>}/>
             <Route path="*" element={<Home/>}/>
           </Routes>
         </Suspense>
